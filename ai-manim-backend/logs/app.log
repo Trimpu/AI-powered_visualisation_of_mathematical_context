@@ -1,0 +1,1326 @@
+2025-08-02 21:51:45,550 - api - INFO - Starting AI Manim Backend...
+2025-08-02 21:51:59,973 - api - INFO - Starting AI Manim Backend...
+2025-08-02 21:52:30,216 - api - INFO - Starting AI Manim Backend...
+2025-08-02 21:54:21,081 - api - INFO - Starting AI Manim Backend...
+2025-08-02 22:00:32,639 - api - INFO - Starting AI Manim Backend...
+2025-08-02 22:03:12,605 - gpt - ERROR - Error generating code: The api_key client option must be set either by passing api_key to the client or by setting the OPENAI_API_KEY environment variable
+2025-08-02 22:04:43,020 - api - INFO - Starting AI Manim Backend...
+2025-08-02 22:05:17,241 - api - INFO - Starting AI Manim Backend...
+2025-08-02 22:05:42,888 - api - INFO - Starting AI Manim Backend...
+2025-08-02 22:06:05,408 - api - INFO - Generating code for prompt: Create a simple animation of a blue circle transforming into a red square
+2025-08-02 22:06:05,414 - api - ERROR - Code generation failed: OpenRouter API key not configured
+2025-08-02 22:09:48,533 - api - INFO - Starting AI Manim Backend...
+2025-08-02 22:12:19,249 - api - INFO - Starting AI Manim Backend...
+2025-08-02 22:13:38,028 - api - INFO - Generating code for prompt: Create a simple animation of a blue circle transforming into a red square
+2025-08-02 22:13:38,030 - api - ERROR - Code generation failed: OpenRouter API key not configured
+2025-08-02 22:15:08,513 - api - INFO - Generating code for prompt: Create a simple animation of a blue circle transforming into a red square
+2025-08-02 22:15:08,514 - api - ERROR - Code generation failed: OpenRouter API key not configured
+2025-08-02 22:15:40,614 - api - INFO - Generating code for prompt: Create a simple animation of a blue circle transforming into a red square
+2025-08-02 22:15:40,615 - api - ERROR - Code generation failed: OpenRouter API key not configured
+2025-08-02 22:23:25,236 - api - INFO - Starting AI Manim Backend...
+2025-08-02 22:23:44,588 - api - INFO - Starting AI Manim Backend...
+2025-08-02 22:24:04,696 - api - INFO - Generating code for prompt: Create a simple animation of a blue circle transforming into a red square
+2025-08-02 22:24:05,027 - gpt - INFO - Sending prompt to OpenRouter: Create a simple animation of a blue circle transforming into a red square
+2025-08-02 22:24:05,354 - gpt - ERROR - Error generating code: Completions.create() got an unexpected keyword argument 'headers'
+Traceback (most recent call last):
+  File "D:\VSCODE\majorproject\ai-manim-backend\app\services\gpt_service.py", line 46, in generate_code
+    response = await client.chat.completions.create(
+                     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        model=settings.MODEL_NAME,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<7 lines>...
+        }
+        ^
+    )
+    ^
+  File "D:\VSCODE\majorproject\ai-manim-backend\.venv\Lib\site-packages\openai\_utils\_utils.py", line 287, in wrapper
+    return func(*args, **kwargs)
+TypeError: Completions.create() got an unexpected keyword argument 'headers'
+2025-08-02 22:24:05,370 - api - ERROR - Code generation failed: Error generating code: Completions.create() got an unexpected keyword argument 'headers'
+2025-08-02 22:24:27,173 - api - INFO - Generating code for prompt: Create a simple animation of a blue circle transforming into a red square
+2025-08-02 22:24:27,440 - gpt - INFO - Sending prompt to OpenRouter: Create a simple animation of a blue circle transforming into a red square
+2025-08-02 22:24:27,441 - gpt - ERROR - Error generating code: Completions.create() got an unexpected keyword argument 'headers'
+Traceback (most recent call last):
+  File "D:\VSCODE\majorproject\ai-manim-backend\app\services\gpt_service.py", line 46, in generate_code
+    response = await client.chat.completions.create(
+                     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        model=settings.MODEL_NAME,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<7 lines>...
+        }
+        ^
+    )
+    ^
+  File "D:\VSCODE\majorproject\ai-manim-backend\.venv\Lib\site-packages\openai\_utils\_utils.py", line 287, in wrapper
+    return func(*args, **kwargs)
+TypeError: Completions.create() got an unexpected keyword argument 'headers'
+2025-08-02 22:24:27,443 - api - ERROR - Code generation failed: Error generating code: Completions.create() got an unexpected keyword argument 'headers'
+2025-08-02 22:25:02,693 - api - INFO - Starting AI Manim Backend...
+2025-08-02 22:26:25,757 - api - INFO - Starting AI Manim Backend...
+2025-08-02 22:26:39,475 - api - INFO - Starting AI Manim Backend...
+2025-08-02 22:27:42,579 - api - INFO - Generating code for prompt: Create a simple animation of a blue circle transforming into a red square
+2025-08-02 22:27:42,889 - gpt - INFO - Sending prompt to OpenRouter: Create a simple animation of a blue circle transforming into a red square
+2025-08-02 22:27:46,453 - openai._base_client - INFO - Retrying request to /chat/completions in 0.420084 seconds
+2025-08-02 22:27:46,874 - openai._base_client - INFO - Retrying request to /chat/completions in 0.767920 seconds
+2025-08-02 22:27:51,435 - gpt - ERROR - OpenRouter API error: Connection error.
+2025-08-02 22:27:51,435 - api - ERROR - Code generation failed: OpenRouter API error: Connection error.
+2025-08-02 22:30:21,540 - api - INFO - Starting AI Manim Backend...
+2025-08-02 22:30:51,430 - api - INFO - Starting AI Manim Backend...
+2025-08-02 22:31:28,503 - api - INFO - Starting AI Manim Backend...
+2025-08-02 22:33:03,120 - api - INFO - Generating code for prompt: Create a simple animation of a blue circle transforming into a red square
+2025-08-02 22:33:03,438 - gpt - INFO - Sending prompt to OpenRouter: Create a simple animation of a blue circle transforming into a red square
+2025-08-02 22:33:04,656 - httpx - INFO - HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 404 Not Found"
+2025-08-02 22:33:04,657 - gpt - ERROR - OpenRouter API error details: Error code: 404 - {'error': {'message': 'No endpoints found for anthropic/claude-3-sonnet.', 'code': 404}, 'user_id': 'user_30ddrTlfKFNK0JqKukUDMGiFswh'}
+2025-08-02 22:33:04,658 - api - ERROR - Code generation failed: OpenRouter API error: Error code: 404 - {'error': {'message': 'No endpoints found for anthropic/claude-3-sonnet.', 'code': 404}, 'user_id': 'user_30ddrTlfKFNK0JqKukUDMGiFswh'}
+2025-08-02 22:36:42,439 - api - INFO - Starting AI Manim Backend...
+2025-08-02 22:36:46,460 - api - INFO - Starting AI Manim Backend...
+2025-08-02 22:38:00,288 - api - INFO - Starting AI Manim Backend...
+2025-08-02 22:38:07,560 - api - INFO - Starting AI Manim Backend...
+2025-08-02 22:43:25,541 - api - INFO - Starting AI Manim Backend...
+2025-08-02 22:43:49,127 - api - INFO - Starting AI Manim Backend...
+2025-08-02 22:44:27,971 - api - INFO - Starting AI Manim Backend...
+2025-08-02 22:51:05,600 - api - INFO - Starting AI Manim Backend...
+2025-08-02 22:51:29,394 - api - INFO - Starting AI Manim Backend...
+2025-08-02 22:51:29,395 - api - INFO - Server running at http://127.0.0.1:8000
+2025-08-02 22:51:29,395 - api - INFO - API documentation available at http://127.0.0.1:8000/docs
+2025-08-02 22:52:40,415 - api - INFO - Generating code for prompt: Create a simple animation of a blue circle transforming into a red square
+2025-08-02 22:52:40,724 - gpt - INFO - Sending prompt to OpenRouter: Create a simple animation of a blue circle transforming into a red square
+2025-08-02 22:52:41,979 - httpx - INFO - HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 402 Payment Required"
+2025-08-02 22:52:41,980 - gpt - ERROR - OpenRouter API error details: Error code: 402 - {'error': {'message': 'This request requires more credits, or fewer max_tokens. You requested up to 1500 tokens, but can only afford 597. To increase, visit https://openrouter.ai/settings/credits and upgrade to a paid account', 'code': 402, 'metadata': {'provider_name': None}}, 'user_id': 'user_30ddrTlfKFNK0JqKukUDMGiFswh'}
+2025-08-02 22:52:41,981 - api - ERROR - Code generation failed: OpenRouter API error: Error code: 402 - {'error': {'message': 'This request requires more credits, or fewer max_tokens. You requested up to 1500 tokens, but can only afford 597. To increase, visit https://openrouter.ai/settings/credits and upgrade to a paid account', 'code': 402, 'metadata': {'provider_name': None}}, 'user_id': 'user_30ddrTlfKFNK0JqKukUDMGiFswh'}
+2025-08-02 23:27:31,690 - api - INFO - Starting AI Manim Backend...
+2025-08-02 23:27:31,691 - api - INFO - Server running at http://127.0.0.1:8000
+2025-08-02 23:27:31,691 - api - INFO - API documentation available at http://127.0.0.1:8000/docs
+2025-08-02 23:29:25,391 - api - INFO - Generating code for prompt: Create a simple animation of a blue circle transforming into a red square
+2025-08-02 23:29:28,185 - httpx - INFO - HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-02 23:29:31,469 - gpt - ERROR - Error: object ChatCompletion can't be used in 'await' expression
+2025-08-02 23:29:31,469 - api - ERROR - Code generation failed: Error: object ChatCompletion can't be used in 'await' expression
+2025-08-02 23:30:32,242 - api - INFO - Starting AI Manim Backend...
+2025-08-02 23:30:32,242 - api - INFO - Server running at http://127.0.0.1:8000
+2025-08-02 23:30:32,243 - api - INFO - API documentation available at http://127.0.0.1:8000/docs
+2025-08-02 23:30:36,408 - api - INFO - Generating code for prompt: Create a simple animation of a blue circle transforming into a red square
+2025-08-02 23:30:38,823 - httpx - INFO - HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-02 23:30:42,889 - gpt - INFO - Code generated successfully
+2025-08-02 23:30:42,890 - api - INFO - Saved Manim script to D:\VSCODE\majorproject\ai-manim-backend\manim_scripts\animation_7300658721030524822.py
+2025-08-02 23:30:42,890 - api - INFO - Starting video rendering
+2025-08-02 23:30:56,629 - manim - ERROR - Manim render failed: Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "D:\VSCODE\majorproject\ai-manim-backend\.venv\Scripts\manim.exe\__main__.py", line 7, in <module>
+    sys.exit(main())
+             ~~~~^^
+  File "D:\VSCODE\majorproject\ai-manim-backend\.venv\Lib\site-packages\click\core.py", line 1442, in __call__
+    return self.main(*args, **kwargs)
+           ~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "D:\VSCODE\majorproject\ai-manim-backend\.venv\Lib\site-packages\click\core.py", line 1363, in main
+    rv = self.invoke(ctx)
+  File "D:\VSCODE\majorproject\ai-manim-backend\.venv\Lib\site-packages\click\core.py", line 1830, in invoke
+    return _process_result(sub_ctx.command.invoke(sub_ctx))
+                           ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "D:\VSCODE\majorproject\ai-manim-backend\.venv\Lib\site-packages\click\core.py", line 1226, in invoke
+    return ctx.invoke(self.callback, **ctx.params)
+           ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\VSCODE\majorproject\ai-manim-backend\.venv\Lib\site-packages\click\core.py", line 794, in invoke
+    return callback(*args, **kwargs)
+  File "D:\VSCODE\majorproject\ai-manim-backend\.venv\Lib\site-packages\manim\cli\render\commands.py", line 121, in render
+    for SceneClass in scene_classes_from_file(file):
+                      ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "D:\VSCODE\majorproject\ai-manim-backend\.venv\Lib\site-packages\manim\utils\module_ops.py", line 167, in scene_classes_from_file
+    module = get_module(file_path)
+  File "D:\VSCODE\majorproject\ai-manim-backend\.venv\Lib\site-packages\manim\utils\module_ops.py", line 67, in get_module
+    spec.loader.exec_module(module)
+    ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^
+  File "<frozen importlib._bootstrap_external>", line 1022, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 1160, in get_code
+  File "<frozen importlib._bootstrap_external>", line 1090, in source_to_code
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "D:\VSCODE\majorproject\ai-manim-backend\manim_scripts\animation_7300658721030524822.py", line 1
+    Here's the Manim CE code for creating an animation of a blue circle transforming into a red square:
+        ^
+SyntaxError: unterminated string literal (detected at line 1)
+
+2025-08-02 23:30:56,632 - api - ERROR - Video rendering failed: Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "D:\VSCODE\majorproject\ai-manim-backend\.venv\Scripts\manim.exe\__main__.py", line 7, in <module>
+    sys.exit(main())
+             ~~~~^^
+  File "D:\VSCODE\majorproject\ai-manim-backend\.venv\Lib\site-packages\click\core.py", line 1442, in __call__
+    return self.main(*args, **kwargs)
+           ~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "D:\VSCODE\majorproject\ai-manim-backend\.venv\Lib\site-packages\click\core.py", line 1363, in main
+    rv = self.invoke(ctx)
+  File "D:\VSCODE\majorproject\ai-manim-backend\.venv\Lib\site-packages\click\core.py", line 1830, in invoke
+    return _process_result(sub_ctx.command.invoke(sub_ctx))
+                           ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "D:\VSCODE\majorproject\ai-manim-backend\.venv\Lib\site-packages\click\core.py", line 1226, in invoke
+    return ctx.invoke(self.callback, **ctx.params)
+           ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\VSCODE\majorproject\ai-manim-backend\.venv\Lib\site-packages\click\core.py", line 794, in invoke
+    return callback(*args, **kwargs)
+  File "D:\VSCODE\majorproject\ai-manim-backend\.venv\Lib\site-packages\manim\cli\render\commands.py", line 121, in render
+    for SceneClass in scene_classes_from_file(file):
+                      ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "D:\VSCODE\majorproject\ai-manim-backend\.venv\Lib\site-packages\manim\utils\module_ops.py", line 167, in scene_classes_from_file
+    module = get_module(file_path)
+  File "D:\VSCODE\majorproject\ai-manim-backend\.venv\Lib\site-packages\manim\utils\module_ops.py", line 67, in get_module
+    spec.loader.exec_module(module)
+    ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^
+  File "<frozen importlib._bootstrap_external>", line 1022, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 1160, in get_code
+  File "<frozen importlib._bootstrap_external>", line 1090, in source_to_code
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "D:\VSCODE\majorproject\ai-manim-backend\manim_scripts\animation_7300658721030524822.py", line 1
+    Here's the Manim CE code for creating an animation of a blue circle transforming into a red square:
+        ^
+SyntaxError: unterminated string literal (detected at line 1)
+
+2025-08-02 23:31:19,038 - api - INFO - Starting AI Manim Backend...
+2025-08-02 23:31:19,038 - api - INFO - Server running at http://127.0.0.1:8000
+2025-08-02 23:31:19,039 - api - INFO - API documentation available at http://127.0.0.1:8000/docs
+2025-08-02 23:33:28,694 - api - INFO - Generating code for prompt: Create a simple animation of a blue circle transforming into a red square
+2025-08-02 23:33:31,315 - httpx - INFO - HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-02 23:33:35,263 - gpt - INFO - Code generated successfully
+2025-08-02 23:33:35,264 - api - INFO - Saved Manim script to D:\VSCODE\majorproject\ai-manim-backend\manim_scripts\animation_-6198028845855148610.py
+2025-08-02 23:33:35,264 - api - INFO - Starting video rendering
+2025-08-02 23:33:37,995 - manim - ERROR - Manim render failed: Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "D:\VSCODE\majorproject\ai-manim-backend\.venv\Scripts\manim.exe\__main__.py", line 7, in <module>
+    sys.exit(main())
+             ~~~~^^
+  File "D:\VSCODE\majorproject\ai-manim-backend\.venv\Lib\site-packages\click\core.py", line 1442, in __call__
+    return self.main(*args, **kwargs)
+           ~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "D:\VSCODE\majorproject\ai-manim-backend\.venv\Lib\site-packages\click\core.py", line 1363, in main
+    rv = self.invoke(ctx)
+  File "D:\VSCODE\majorproject\ai-manim-backend\.venv\Lib\site-packages\click\core.py", line 1830, in invoke
+    return _process_result(sub_ctx.command.invoke(sub_ctx))
+                           ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "D:\VSCODE\majorproject\ai-manim-backend\.venv\Lib\site-packages\click\core.py", line 1226, in invoke
+    return ctx.invoke(self.callback, **ctx.params)
+           ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\VSCODE\majorproject\ai-manim-backend\.venv\Lib\site-packages\click\core.py", line 794, in invoke
+    return callback(*args, **kwargs)
+  File "D:\VSCODE\majorproject\ai-manim-backend\.venv\Lib\site-packages\manim\cli\render\commands.py", line 121, in render
+    for SceneClass in scene_classes_from_file(file):
+                      ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "D:\VSCODE\majorproject\ai-manim-backend\.venv\Lib\site-packages\manim\utils\module_ops.py", line 167, in scene_classes_from_file
+    module = get_module(file_path)
+  File "D:\VSCODE\majorproject\ai-manim-backend\.venv\Lib\site-packages\manim\utils\module_ops.py", line 67, in get_module
+    spec.loader.exec_module(module)
+    ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^
+  File "<frozen importlib._bootstrap_external>", line 1022, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 1160, in get_code
+  File "<frozen importlib._bootstrap_external>", line 1090, in source_to_code
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "D:\VSCODE\majorproject\ai-manim-backend\manim_scripts\animation_-6198028845855148610.py", line 1
+    Here is the Manim CE code to create an animation of a blue circle transforming into a red square.
+                ^^^^^
+SyntaxError: invalid syntax
+
+2025-08-02 23:33:37,998 - api - ERROR - Video rendering failed: Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "D:\VSCODE\majorproject\ai-manim-backend\.venv\Scripts\manim.exe\__main__.py", line 7, in <module>
+    sys.exit(main())
+             ~~~~^^
+  File "D:\VSCODE\majorproject\ai-manim-backend\.venv\Lib\site-packages\click\core.py", line 1442, in __call__
+    return self.main(*args, **kwargs)
+           ~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "D:\VSCODE\majorproject\ai-manim-backend\.venv\Lib\site-packages\click\core.py", line 1363, in main
+    rv = self.invoke(ctx)
+  File "D:\VSCODE\majorproject\ai-manim-backend\.venv\Lib\site-packages\click\core.py", line 1830, in invoke
+    return _process_result(sub_ctx.command.invoke(sub_ctx))
+                           ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "D:\VSCODE\majorproject\ai-manim-backend\.venv\Lib\site-packages\click\core.py", line 1226, in invoke
+    return ctx.invoke(self.callback, **ctx.params)
+           ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\VSCODE\majorproject\ai-manim-backend\.venv\Lib\site-packages\click\core.py", line 794, in invoke
+    return callback(*args, **kwargs)
+  File "D:\VSCODE\majorproject\ai-manim-backend\.venv\Lib\site-packages\manim\cli\render\commands.py", line 121, in render
+    for SceneClass in scene_classes_from_file(file):
+                      ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "D:\VSCODE\majorproject\ai-manim-backend\.venv\Lib\site-packages\manim\utils\module_ops.py", line 167, in scene_classes_from_file
+    module = get_module(file_path)
+  File "D:\VSCODE\majorproject\ai-manim-backend\.venv\Lib\site-packages\manim\utils\module_ops.py", line 67, in get_module
+    spec.loader.exec_module(module)
+    ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^
+  File "<frozen importlib._bootstrap_external>", line 1022, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 1160, in get_code
+  File "<frozen importlib._bootstrap_external>", line 1090, in source_to_code
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "D:\VSCODE\majorproject\ai-manim-backend\manim_scripts\animation_-6198028845855148610.py", line 1
+    Here is the Manim CE code to create an animation of a blue circle transforming into a red square.
+                ^^^^^
+SyntaxError: invalid syntax
+
+2025-08-02 23:34:39,679 - api - INFO - Starting AI Manim Backend...
+2025-08-02 23:34:39,680 - api - INFO - Server running at http://127.0.0.1:8000
+2025-08-02 23:34:39,680 - api - INFO - API documentation available at http://127.0.0.1:8000/docs
+2025-08-02 23:35:03,178 - api - INFO - Starting AI Manim Backend...
+2025-08-02 23:35:03,178 - api - INFO - Server running at http://127.0.0.1:8000
+2025-08-02 23:35:03,178 - api - INFO - API documentation available at http://127.0.0.1:8000/docs
+2025-08-02 23:37:43,379 - api - INFO - Starting AI Manim Backend...
+2025-08-02 23:37:43,380 - api - INFO - Server running at http://127.0.0.1:8000
+2025-08-02 23:37:43,380 - api - INFO - API documentation available at http://127.0.0.1:8000/docs
+2025-08-02 23:38:06,295 - api - INFO - Starting AI Manim Backend...
+2025-08-02 23:38:06,295 - api - INFO - Server running at http://127.0.0.1:8000
+2025-08-02 23:38:06,295 - api - INFO - API documentation available at http://127.0.0.1:8000/docs
+2025-08-02 23:38:17,211 - api - INFO - Starting AI Manim Backend...
+2025-08-02 23:38:17,211 - api - INFO - Server running at http://127.0.0.1:8000
+2025-08-02 23:38:17,211 - api - INFO - API documentation available at http://127.0.0.1:8000/docs
+2025-08-02 23:38:49,256 - httpx - INFO - HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-02 23:38:50,554 - gpt - INFO - Code generated successfully
+2025-08-02 23:38:50,555 - api - INFO - Generated code:
+```python
+from manim import *
+
+class CircleToSquare(Scene):
+    def construct(self):
+        circle = Circle(color=BLUE)
+        square = Square(color=RED)
+        self.play(Create(circle))
+        self.play(Transform(circle, square))
+        self.wait()
+```
+2025-08-02 23:38:50,558 - api - INFO - Saved Manim script to D:\VSCODE\majorproject\ai-manim-backend\manim_scripts\animation_746484794104245659.py
+2025-08-02 23:38:52,843 - manim - ERROR - Manim render failed: Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "D:\VSCODE\majorproject\ai-manim-backend\.venv\Scripts\manim.exe\__main__.py", line 7, in <module>
+    sys.exit(main())
+             ~~~~^^
+  File "D:\VSCODE\majorproject\ai-manim-backend\.venv\Lib\site-packages\click\core.py", line 1442, in __call__
+    return self.main(*args, **kwargs)
+           ~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "D:\VSCODE\majorproject\ai-manim-backend\.venv\Lib\site-packages\click\core.py", line 1363, in main
+    rv = self.invoke(ctx)
+  File "D:\VSCODE\majorproject\ai-manim-backend\.venv\Lib\site-packages\click\core.py", line 1830, in invoke
+    return _process_result(sub_ctx.command.invoke(sub_ctx))
+                           ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "D:\VSCODE\majorproject\ai-manim-backend\.venv\Lib\site-packages\click\core.py", line 1226, in invoke
+    return ctx.invoke(self.callback, **ctx.params)
+           ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\VSCODE\majorproject\ai-manim-backend\.venv\Lib\site-packages\click\core.py", line 794, in invoke
+    return callback(*args, **kwargs)
+  File "D:\VSCODE\majorproject\ai-manim-backend\.venv\Lib\site-packages\manim\cli\render\commands.py", line 121, in render
+    for SceneClass in scene_classes_from_file(file):
+                      ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "D:\VSCODE\majorproject\ai-manim-backend\.venv\Lib\site-packages\manim\utils\module_ops.py", line 167, in scene_classes_from_file
+    module = get_module(file_path)
+  File "D:\VSCODE\majorproject\ai-manim-backend\.venv\Lib\site-packages\manim\utils\module_ops.py", line 67, in get_module
+    spec.loader.exec_module(module)
+    ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^
+  File "<frozen importlib._bootstrap_external>", line 1022, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 1160, in get_code
+  File "<frozen importlib._bootstrap_external>", line 1090, in source_to_code
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "D:\VSCODE\majorproject\ai-manim-backend\manim_scripts\animation_746484794104245659.py", line 1
+    ```python
+    ^
+SyntaxError: invalid syntax
+
+2025-08-02 23:39:43,692 - api - INFO - Starting AI Manim Backend...
+2025-08-02 23:39:43,693 - api - INFO - Server running at http://127.0.0.1:8000
+2025-08-02 23:39:43,693 - api - INFO - API documentation available at http://127.0.0.1:8000/docs
+2025-08-02 23:42:21,794 - api - INFO - Starting AI Manim Backend...
+2025-08-02 23:42:21,794 - api - INFO - Server running at http://127.0.0.1:8000
+2025-08-02 23:42:21,795 - api - INFO - API documentation available at http://127.0.0.1:8000/docs
+2025-08-02 23:43:15,556 - httpx - INFO - HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-02 23:43:17,245 - gpt - INFO - Code generated successfully
+2025-08-02 23:43:17,245 - api - INFO - Generated code:
+```python
+from manim import *
+
+class TransformCircleToSquare(Scene):
+    def construct(self):
+        circle = Circle(color=BLUE)
+        square = Square(color=RED)
+
+        self.play(Create(circle))
+        self.play(Transform(circle, square))
+        self.wait()
+```
+2025-08-02 23:43:17,248 - api - INFO - Saved Manim script to D:\VSCODE\majorproject\ai-manim-backend\manim_scripts\animation_-1676021924313041034.py
+2025-08-02 23:43:19,587 - manim - ERROR - Manim render failed: Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "D:\VSCODE\majorproject\ai-manim-backend\.venv\Scripts\manim.exe\__main__.py", line 7, in <module>
+    sys.exit(main())
+             ~~~~^^
+  File "D:\VSCODE\majorproject\ai-manim-backend\.venv\Lib\site-packages\click\core.py", line 1442, in __call__
+    return self.main(*args, **kwargs)
+           ~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "D:\VSCODE\majorproject\ai-manim-backend\.venv\Lib\site-packages\click\core.py", line 1363, in main
+    rv = self.invoke(ctx)
+  File "D:\VSCODE\majorproject\ai-manim-backend\.venv\Lib\site-packages\click\core.py", line 1830, in invoke
+    return _process_result(sub_ctx.command.invoke(sub_ctx))
+                           ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "D:\VSCODE\majorproject\ai-manim-backend\.venv\Lib\site-packages\click\core.py", line 1226, in invoke
+    return ctx.invoke(self.callback, **ctx.params)
+           ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\VSCODE\majorproject\ai-manim-backend\.venv\Lib\site-packages\click\core.py", line 794, in invoke
+    return callback(*args, **kwargs)
+  File "D:\VSCODE\majorproject\ai-manim-backend\.venv\Lib\site-packages\manim\cli\render\commands.py", line 121, in render
+    for SceneClass in scene_classes_from_file(file):
+                      ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "D:\VSCODE\majorproject\ai-manim-backend\.venv\Lib\site-packages\manim\utils\module_ops.py", line 167, in scene_classes_from_file
+    module = get_module(file_path)
+  File "D:\VSCODE\majorproject\ai-manim-backend\.venv\Lib\site-packages\manim\utils\module_ops.py", line 67, in get_module
+    spec.loader.exec_module(module)
+    ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^
+  File "<frozen importlib._bootstrap_external>", line 1022, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 1160, in get_code
+  File "<frozen importlib._bootstrap_external>", line 1090, in source_to_code
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "D:\VSCODE\majorproject\ai-manim-backend\manim_scripts\animation_-1676021924313041034.py", line 1
+    ```python
+    ^
+SyntaxError: invalid syntax
+
+2025-08-02 23:44:34,713 - api - INFO - Starting AI Manim Backend...
+2025-08-02 23:44:34,713 - api - INFO - Server running at http://127.0.0.1:8000
+2025-08-02 23:44:34,714 - api - INFO - API documentation available at http://127.0.0.1:8000/docs
+2025-08-02 23:45:06,253 - httpx - INFO - HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-02 23:45:07,863 - gpt - INFO - Code generated successfully
+2025-08-02 23:45:07,864 - api - INFO - Generated code for animation_4f8b479e3af448b08fdaaa1f8c41801b.py:
+```python
+from manim import *
+
+class CircleToSquare(Scene):
+    def construct(self):
+        circle = Circle(color=BLUE)
+        square = Square(color=RED)
+        
+        self.play(Create(circle))
+        self.wait()
+        self.play(Transform(circle, square))
+        self.wait()
+```
+2025-08-02 23:45:07,865 - api - INFO - Saved Manim script to D:\VSCODE\majorproject\ai-manim-backend\manim_scripts\animation_4f8b479e3af448b08fdaaa1f8c41801b.py
+2025-08-02 23:45:09,995 - manim - ERROR - Manim render failed: Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "D:\VSCODE\majorproject\ai-manim-backend\.venv\Scripts\manim.exe\__main__.py", line 7, in <module>
+    sys.exit(main())
+             ~~~~^^
+  File "D:\VSCODE\majorproject\ai-manim-backend\.venv\Lib\site-packages\click\core.py", line 1442, in __call__
+    return self.main(*args, **kwargs)
+           ~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "D:\VSCODE\majorproject\ai-manim-backend\.venv\Lib\site-packages\click\core.py", line 1363, in main
+    rv = self.invoke(ctx)
+  File "D:\VSCODE\majorproject\ai-manim-backend\.venv\Lib\site-packages\click\core.py", line 1830, in invoke
+    return _process_result(sub_ctx.command.invoke(sub_ctx))
+                           ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "D:\VSCODE\majorproject\ai-manim-backend\.venv\Lib\site-packages\click\core.py", line 1226, in invoke
+    return ctx.invoke(self.callback, **ctx.params)
+           ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\VSCODE\majorproject\ai-manim-backend\.venv\Lib\site-packages\click\core.py", line 794, in invoke
+    return callback(*args, **kwargs)
+  File "D:\VSCODE\majorproject\ai-manim-backend\.venv\Lib\site-packages\manim\cli\render\commands.py", line 121, in render
+    for SceneClass in scene_classes_from_file(file):
+                      ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "D:\VSCODE\majorproject\ai-manim-backend\.venv\Lib\site-packages\manim\utils\module_ops.py", line 167, in scene_classes_from_file
+    module = get_module(file_path)
+  File "D:\VSCODE\majorproject\ai-manim-backend\.venv\Lib\site-packages\manim\utils\module_ops.py", line 67, in get_module
+    spec.loader.exec_module(module)
+    ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^
+  File "<frozen importlib._bootstrap_external>", line 1022, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 1160, in get_code
+  File "<frozen importlib._bootstrap_external>", line 1090, in source_to_code
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "D:\VSCODE\majorproject\ai-manim-backend\manim_scripts\animation_4f8b479e3af448b08fdaaa1f8c41801b.py", line 1
+    ```python
+    ^
+SyntaxError: invalid syntax
+
+2025-08-02 23:45:09,999 - api - ERROR - Rendering failed: Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "D:\VSCODE\majorproject\ai-manim-backend\.venv\Scripts\manim.exe\__main__.py", line 7, in <module>
+    sys.exit(main())
+             ~~~~^^
+  File "D:\VSCODE\majorproject\ai-manim-backend\.venv\Lib\site-packages\click\core.py", line 1442, in __call__
+    return self.main(*args, **kwargs)
+           ~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "D:\VSCODE\majorproject\ai-manim-backend\.venv\Lib\site-packages\click\core.py", line 1363, in main
+    rv = self.invoke(ctx)
+  File "D:\VSCODE\majorproject\ai-manim-backend\.venv\Lib\site-packages\click\core.py", line 1830, in invoke
+    return _process_result(sub_ctx.command.invoke(sub_ctx))
+                           ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "D:\VSCODE\majorproject\ai-manim-backend\.venv\Lib\site-packages\click\core.py", line 1226, in invoke
+    return ctx.invoke(self.callback, **ctx.params)
+           ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\VSCODE\majorproject\ai-manim-backend\.venv\Lib\site-packages\click\core.py", line 794, in invoke
+    return callback(*args, **kwargs)
+  File "D:\VSCODE\majorproject\ai-manim-backend\.venv\Lib\site-packages\manim\cli\render\commands.py", line 121, in render
+    for SceneClass in scene_classes_from_file(file):
+                      ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "D:\VSCODE\majorproject\ai-manim-backend\.venv\Lib\site-packages\manim\utils\module_ops.py", line 167, in scene_classes_from_file
+    module = get_module(file_path)
+  File "D:\VSCODE\majorproject\ai-manim-backend\.venv\Lib\site-packages\manim\utils\module_ops.py", line 67, in get_module
+    spec.loader.exec_module(module)
+    ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^
+  File "<frozen importlib._bootstrap_external>", line 1022, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 1160, in get_code
+  File "<frozen importlib._bootstrap_external>", line 1090, in source_to_code
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "D:\VSCODE\majorproject\ai-manim-backend\manim_scripts\animation_4f8b479e3af448b08fdaaa1f8c41801b.py", line 1
+    ```python
+    ^
+SyntaxError: invalid syntax
+
+2025-08-02 23:46:28,717 - api - INFO - Starting AI Manim Backend...
+2025-08-02 23:46:28,717 - api - INFO - Server running at http://127.0.0.1:8000
+2025-08-02 23:46:28,717 - api - INFO - API documentation available at http://127.0.0.1:8000/docs
+2025-08-02 23:46:41,318 - httpx - INFO - HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-02 23:46:42,650 - gpt - INFO - Generated code:
+from manim import *
+
+class CircleToSquareTransformation(Scene):
+    def construct(self):
+        blue_circle = Circle(color=BLUE)
+        self.play(Create(blue_circle))
+        red_square = Square(color=RED)
+        self.play(Transform(blue_circle, red_square))
+2025-08-02 23:46:42,651 - api - INFO - Generated code for animation_886090d7343d4800a5a5a2719f128556.py:
+from manim import *
+
+class CircleToSquareTransformation(Scene):
+    def construct(self):
+        blue_circle = Circle(color=BLUE)
+        self.play(Create(blue_circle))
+        red_square = Square(color=RED)
+        self.play(Transform(blue_circle, red_square))
+2025-08-02 23:46:42,652 - api - INFO - Saved Manim script to D:\VSCODE\majorproject\ai-manim-backend\manim_scripts\animation_886090d7343d4800a5a5a2719f128556.py
+2025-08-02 23:46:44,680 - api - ERROR - Rendering failed: Video file not found after rendering
+2025-08-02 23:47:48,226 - api - INFO - Starting AI Manim Backend...
+2025-08-02 23:47:48,226 - api - INFO - Server running at http://127.0.0.1:8000
+2025-08-02 23:47:48,227 - api - INFO - API documentation available at http://127.0.0.1:8000/docs
+2025-08-02 23:48:22,210 - api - INFO - Starting AI Manim Backend...
+2025-08-02 23:48:22,211 - api - INFO - Server running at http://127.0.0.1:8000
+2025-08-02 23:48:22,211 - api - INFO - API documentation available at http://127.0.0.1:8000/docs
+2025-08-02 23:48:38,896 - httpx - INFO - HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-02 23:48:40,157 - gpt - INFO - Generated code:
+from manim import *
+
+class CircleToSquare(Scene):
+    def construct(self):
+        circle = Circle(color=BLUE)
+        square = Square(color=RED)
+        self.play(ShowCreation(circle))
+        self.play(Transform(circle, square))
+        self.wait()
+2025-08-02 23:48:40,159 - api - INFO - Generated code for animation_5e04e5a449f84f909c52227bb6517790.py:
+from manim import *
+
+class CircleToSquare(Scene):
+    def construct(self):
+        circle = Circle(color=BLUE)
+        square = Square(color=RED)
+        self.play(ShowCreation(circle))
+        self.play(Transform(circle, square))
+        self.wait()
+2025-08-02 23:48:40,163 - api - INFO - Saved Manim script to D:\VSCODE\majorproject\ai-manim-backend\manim_scripts\animation_5e04e5a449f84f909c52227bb6517790.py
+2025-08-02 23:48:40,163 - manim - INFO - Starting render for script: D:\VSCODE\majorproject\ai-manim-backend\manim_scripts\animation_5e04e5a449f84f909c52227bb6517790.py
+2025-08-02 23:48:42,272 - manim - INFO - Manim stdout: Manim Community v0.19.0
+
+
+2025-08-02 23:48:42,272 - manim - ERROR - Manim stderr: +--------------------- Traceback (most recent call last) ---------------------+
+| D:\VSCODE\majorproject\ai-manim-backend\.venv\Lib\site-packages\manim\cli\r |
+| ender\commands.py:125 in render                                             |
+|                                                                             |
+|   122             try:                                                      |
+|   123                 with tempconfig({}):                                  |
+|   124                     scene = SceneClass()                              |
+| > 125                     scene.render()                                    |
+|   126             except Exception:                                         |
+|   127                 error_console.print_exception()                       |
+|   128                 sys.exit(1)                                           |
+|                                                                             |
+| D:\VSCODE\majorproject\ai-manim-backend\.venv\Lib\site-packages\manim\scene |
+| \scene.py:237 in render                                                     |
+|                                                                             |
+|    234         """                                                          |
+|    235         self.setup()                                                 |
+|    236         try:                                                         |
+| >  237             self.construct()                                         |
+|    238         except EndSceneEarlyException:                               |
+|    239             pass                                                     |
+|    240         except RerunSceneException:                                  |
+|                                                                             |
+| D:\VSCODE\majorproject\ai-manim-backend\manim_scripts\animation_5e04e5a449f |
+| 84f909c52227bb6517790.py:7 in construct                                     |
+|                                                                             |
+|    4     def construct(self):                                               |
+|    5         circle = Circle(color=BLUE)                                    |
+|    6         square = Square(color=RED)                                     |
+| >  7         self.play(ShowCreation(circle))                                |
+|    8         self.play(Transform(circle, square))                           |
+|    9         self.wait()                                                    |
+|   10                                                                        |
++-----------------------------------------------------------------------------+
+NameError: name 'ShowCreation' is not defined
+
+2025-08-02 23:48:42,276 - api - ERROR - Rendering failed: +--------------------- Traceback (most recent call last) ---------------------+
+| D:\VSCODE\majorproject\ai-manim-backend\.venv\Lib\site-packages\manim\cli\r |
+| ender\commands.py:125 in render                                             |
+|                                                                             |
+|   122             try:                                                      |
+|   123                 with tempconfig({}):                                  |
+|   124                     scene = SceneClass()                              |
+| > 125                     scene.render()                                    |
+|   126             except Exception:                                         |
+|   127                 error_console.print_exception()                       |
+|   128                 sys.exit(1)                                           |
+|                                                                             |
+| D:\VSCODE\majorproject\ai-manim-backend\.venv\Lib\site-packages\manim\scene |
+| \scene.py:237 in render                                                     |
+|                                                                             |
+|    234         """                                                          |
+|    235         self.setup()                                                 |
+|    236         try:                                                         |
+| >  237             self.construct()                                         |
+|    238         except EndSceneEarlyException:                               |
+|    239             pass                                                     |
+|    240         except RerunSceneException:                                  |
+|                                                                             |
+| D:\VSCODE\majorproject\ai-manim-backend\manim_scripts\animation_5e04e5a449f |
+| 84f909c52227bb6517790.py:7 in construct                                     |
+|                                                                             |
+|    4     def construct(self):                                               |
+|    5         circle = Circle(color=BLUE)                                    |
+|    6         square = Square(color=RED)                                     |
+| >  7         self.play(ShowCreation(circle))                                |
+|    8         self.play(Transform(circle, square))                           |
+|    9         self.wait()                                                    |
+|   10                                                                        |
++-----------------------------------------------------------------------------+
+NameError: name 'ShowCreation' is not defined
+
+2025-08-02 23:50:17,049 - httpx - INFO - HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 402 Payment Required"
+2025-08-02 23:50:17,051 - gpt - ERROR - API error: Error code: 402 - {'error': {'message': 'This request requires more credits, or fewer max_tokens. You requested up to 400 tokens, but can only afford 392. To increase, visit https://openrouter.ai/settings/credits and upgrade to a paid account', 'code': 402, 'metadata': {'provider_name': None}}, 'user_id': 'user_30ddrTlfKFNK0JqKukUDMGiFswh'}
+2025-08-02 23:50:17,051 - api - ERROR - Code generation failed: OpenRouter API error: Error code: 402 - {'error': {'message': 'This request requires more credits, or fewer max_tokens. You requested up to 400 tokens, but can only afford 392. To increase, visit https://openrouter.ai/settings/credits and upgrade to a paid account', 'code': 402, 'metadata': {'provider_name': None}}, 'user_id': 'user_30ddrTlfKFNK0JqKukUDMGiFswh'}
+2025-08-02 23:51:50,395 - httpx - INFO - HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-02 23:51:54,008 - gpt - INFO - Generated code:
+Here is the Manim CE code for the animation you requested:
+
+from manim import *
+
+class TransformCircleIntoSquare(Scene):
+    def construct(self):
+        circle = Circle(color=BLUE)
+        square = Square(color=RED)
+        self.play(FadeIn(circle))
+        self.wait()
+        self.play(Transform(circle, square))
+        self.wait()
+
+This animation starts with the creation and display of a blue circle. Then, the circle is transformed into a red square. The `wait()` function is used to pause the animation for a bit before moving on to the next part.
+2025-08-02 23:51:54,009 - api - INFO - Generated code for animation_94975cfd44eb444f84027b0efeadbdfa.py:
+Here is the Manim CE code for the animation you requested:
+
+from manim import *
+
+class TransformCircleIntoSquare(Scene):
+    def construct(self):
+        circle = Circle(color=BLUE)
+        square = Square(color=RED)
+        self.play(FadeIn(circle))
+        self.wait()
+        self.play(Transform(circle, square))
+        self.wait()
+
+This animation starts with the creation and display of a blue circle. Then, the circle is transformed into a red square. The `wait()` function is used to pause the animation for a bit before moving on to the next part.
+2025-08-02 23:51:54,012 - api - INFO - Saved Manim script to D:\VSCODE\majorproject\ai-manim-backend\manim_scripts\animation_94975cfd44eb444f84027b0efeadbdfa.py
+2025-08-02 23:51:54,012 - manim - INFO - Starting render for script: D:\VSCODE\majorproject\ai-manim-backend\manim_scripts\animation_94975cfd44eb444f84027b0efeadbdfa.py
+2025-08-02 23:51:56,181 - manim - INFO - Manim stdout: Manim Community v0.19.0
+
+
+2025-08-02 23:51:56,182 - manim - ERROR - Manim stderr: Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "D:\VSCODE\majorproject\ai-manim-backend\.venv\Scripts\manim.exe\__main__.py", line 7, in <module>
+    sys.exit(main())
+             ~~~~^^
+  File "D:\VSCODE\majorproject\ai-manim-backend\.venv\Lib\site-packages\click\core.py", line 1442, in __call__
+    return self.main(*args, **kwargs)
+           ~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "D:\VSCODE\majorproject\ai-manim-backend\.venv\Lib\site-packages\click\core.py", line 1363, in main
+    rv = self.invoke(ctx)
+  File "D:\VSCODE\majorproject\ai-manim-backend\.venv\Lib\site-packages\click\core.py", line 1830, in invoke
+    return _process_result(sub_ctx.command.invoke(sub_ctx))
+                           ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "D:\VSCODE\majorproject\ai-manim-backend\.venv\Lib\site-packages\click\core.py", line 1226, in invoke
+    return ctx.invoke(self.callback, **ctx.params)
+           ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\VSCODE\majorproject\ai-manim-backend\.venv\Lib\site-packages\click\core.py", line 794, in invoke
+    return callback(*args, **kwargs)
+  File "D:\VSCODE\majorproject\ai-manim-backend\.venv\Lib\site-packages\manim\cli\render\commands.py", line 121, in render
+    for SceneClass in scene_classes_from_file(file):
+                      ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "D:\VSCODE\majorproject\ai-manim-backend\.venv\Lib\site-packages\manim\utils\module_ops.py", line 167, in scene_classes_from_file
+    module = get_module(file_path)
+  File "D:\VSCODE\majorproject\ai-manim-backend\.venv\Lib\site-packages\manim\utils\module_ops.py", line 67, in get_module
+    spec.loader.exec_module(module)
+    ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^
+  File "<frozen importlib._bootstrap_external>", line 1022, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 1160, in get_code
+  File "<frozen importlib._bootstrap_external>", line 1090, in source_to_code
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "D:\VSCODE\majorproject\ai-manim-backend\manim_scripts\animation_94975cfd44eb444f84027b0efeadbdfa.py", line 1
+    Here is the Manim CE code for the animation you requested:
+                ^^^^^
+SyntaxError: invalid syntax
+
+2025-08-02 23:51:56,185 - api - ERROR - Rendering failed: Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "D:\VSCODE\majorproject\ai-manim-backend\.venv\Scripts\manim.exe\__main__.py", line 7, in <module>
+    sys.exit(main())
+             ~~~~^^
+  File "D:\VSCODE\majorproject\ai-manim-backend\.venv\Lib\site-packages\click\core.py", line 1442, in __call__
+    return self.main(*args, **kwargs)
+           ~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "D:\VSCODE\majorproject\ai-manim-backend\.venv\Lib\site-packages\click\core.py", line 1363, in main
+    rv = self.invoke(ctx)
+  File "D:\VSCODE\majorproject\ai-manim-backend\.venv\Lib\site-packages\click\core.py", line 1830, in invoke
+    return _process_result(sub_ctx.command.invoke(sub_ctx))
+                           ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "D:\VSCODE\majorproject\ai-manim-backend\.venv\Lib\site-packages\click\core.py", line 1226, in invoke
+    return ctx.invoke(self.callback, **ctx.params)
+           ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\VSCODE\majorproject\ai-manim-backend\.venv\Lib\site-packages\click\core.py", line 794, in invoke
+    return callback(*args, **kwargs)
+  File "D:\VSCODE\majorproject\ai-manim-backend\.venv\Lib\site-packages\manim\cli\render\commands.py", line 121, in render
+    for SceneClass in scene_classes_from_file(file):
+                      ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "D:\VSCODE\majorproject\ai-manim-backend\.venv\Lib\site-packages\manim\utils\module_ops.py", line 167, in scene_classes_from_file
+    module = get_module(file_path)
+  File "D:\VSCODE\majorproject\ai-manim-backend\.venv\Lib\site-packages\manim\utils\module_ops.py", line 67, in get_module
+    spec.loader.exec_module(module)
+    ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^
+  File "<frozen importlib._bootstrap_external>", line 1022, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 1160, in get_code
+  File "<frozen importlib._bootstrap_external>", line 1090, in source_to_code
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "D:\VSCODE\majorproject\ai-manim-backend\manim_scripts\animation_94975cfd44eb444f84027b0efeadbdfa.py", line 1
+    Here is the Manim CE code for the animation you requested:
+                ^^^^^
+SyntaxError: invalid syntax
+
+2025-08-02 23:53:45,635 - httpx - INFO - HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-02 23:53:46,740 - gpt - INFO - Generated code:
+from manim import *
+
+class TransformCircleToSquare(Scene):
+    def construct(self):
+        circle = Circle(color=BLUE)
+        square = Square(color=RED)
+        self.play(Create(circle))
+        self.play(Transform(circle, square))
+2025-08-02 23:53:46,740 - api - INFO - Generated code for animation_babec1e59d764c10a12f001dd0aac111.py:
+from manim import *
+
+class TransformCircleToSquare(Scene):
+    def construct(self):
+        circle = Circle(color=BLUE)
+        square = Square(color=RED)
+        self.play(Create(circle))
+        self.play(Transform(circle, square))
+2025-08-02 23:53:46,741 - api - INFO - Saved Manim script to D:\VSCODE\majorproject\ai-manim-backend\manim_scripts\animation_babec1e59d764c10a12f001dd0aac111.py
+2025-08-02 23:53:46,741 - manim - INFO - Starting render for script: D:\VSCODE\majorproject\ai-manim-backend\manim_scripts\animation_babec1e59d764c10a12f001dd0aac111.py
+2025-08-02 23:53:54,702 - manim - INFO - Manim stdout: Manim Community v0.19.0
+
+[08/02/25 23:53:54] INFO     Rendered TransformCircleToSquare      scene.py:255
+                             Played 2 animations                               
+
+2025-08-02 23:53:54,702 - manim - ERROR - Manim stderr: 
+Animation 0: Create(Circle):   0%|          | 0/15 [00:00<?, ?it/s]
+                                                                   
+
+Animation 1: Transform(Circle):   0%|          | 0/15 [00:00<?, ?it/s]
+                                                                      
+
+2025-08-02 23:53:54,703 - manim - ERROR - Video not found at expected path: D:\VSCODE\majorproject\ai-manim-backend\media\videos\TransformCircleToSquare\1080p60\TransformCircleToSquare.mp4
+2025-08-02 23:53:54,704 - api - ERROR - Rendering failed: Video file not found after rendering
+2025-08-03 00:04:07,888 - httpx - INFO - HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 402 Payment Required"
+2025-08-03 00:04:07,889 - gpt - ERROR - API error: Error code: 402 - {'error': {'message': 'This request requires more credits, or fewer max_tokens. You requested up to 4096 tokens, but can only afford 348. To increase, visit https://openrouter.ai/settings/credits and upgrade to a paid account', 'code': 402, 'metadata': {'provider_name': None}}, 'user_id': 'user_30ddrTlfKFNK0JqKukUDMGiFswh'}
+2025-08-03 00:04:07,890 - api - ERROR - Code generation failed: OpenRouter API error: Error code: 402 - {'error': {'message': 'This request requires more credits, or fewer max_tokens. You requested up to 4096 tokens, but can only afford 348. To increase, visit https://openrouter.ai/settings/credits and upgrade to a paid account', 'code': 402, 'metadata': {'provider_name': None}}, 'user_id': 'user_30ddrTlfKFNK0JqKukUDMGiFswh'}
+2025-08-03 00:12:44,641 - httpx - INFO - HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 402 Payment Required"
+2025-08-03 00:12:44,642 - gpt - ERROR - API error: Error code: 402 - {'error': {'message': 'This request requires more credits, or fewer max_tokens. You requested up to 4096 tokens, but can only afford 348. To increase, visit https://openrouter.ai/settings/credits and upgrade to a paid account', 'code': 402, 'metadata': {'provider_name': None}}, 'user_id': 'user_30ddrTlfKFNK0JqKukUDMGiFswh'}
+2025-08-03 00:12:44,642 - api - ERROR - Code generation failed: OpenRouter API error: Error code: 402 - {'error': {'message': 'This request requires more credits, or fewer max_tokens. You requested up to 4096 tokens, but can only afford 348. To increase, visit https://openrouter.ai/settings/credits and upgrade to a paid account', 'code': 402, 'metadata': {'provider_name': None}}, 'user_id': 'user_30ddrTlfKFNK0JqKukUDMGiFswh'}
+2025-08-03 00:13:07,506 - httpx - INFO - HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 402 Payment Required"
+2025-08-03 00:13:07,507 - gpt - ERROR - API error: Error code: 402 - {'error': {'message': 'This request requires more credits, or fewer max_tokens. You requested up to 400 tokens, but can only afford 348. To increase, visit https://openrouter.ai/settings/credits and upgrade to a paid account', 'code': 402, 'metadata': {'provider_name': None}}, 'user_id': 'user_30ddrTlfKFNK0JqKukUDMGiFswh'}
+2025-08-03 00:13:07,508 - api - ERROR - Code generation failed: OpenRouter API error: Error code: 402 - {'error': {'message': 'This request requires more credits, or fewer max_tokens. You requested up to 400 tokens, but can only afford 348. To increase, visit https://openrouter.ai/settings/credits and upgrade to a paid account', 'code': 402, 'metadata': {'provider_name': None}}, 'user_id': 'user_30ddrTlfKFNK0JqKukUDMGiFswh'}
+2025-08-03 00:13:37,305 - httpx - INFO - HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 402 Payment Required"
+2025-08-03 00:13:37,306 - gpt - ERROR - API error: Error code: 402 - {'error': {'message': 'This request requires more credits, or fewer max_tokens. You requested up to 400 tokens, but can only afford 348. To increase, visit https://openrouter.ai/settings/credits and upgrade to a paid account', 'code': 402, 'metadata': {'provider_name': None}}, 'user_id': 'user_30ddrTlfKFNK0JqKukUDMGiFswh'}
+2025-08-03 00:13:37,306 - api - ERROR - Code generation failed: OpenRouter API error: Error code: 402 - {'error': {'message': 'This request requires more credits, or fewer max_tokens. You requested up to 400 tokens, but can only afford 348. To increase, visit https://openrouter.ai/settings/credits and upgrade to a paid account', 'code': 402, 'metadata': {'provider_name': None}}, 'user_id': 'user_30ddrTlfKFNK0JqKukUDMGiFswh'}
+2025-08-03 00:14:16,861 - httpx - INFO - HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 402 Payment Required"
+2025-08-03 00:14:16,862 - gpt - ERROR - API error: Error code: 402 - {'error': {'message': 'This request requires more credits, or fewer max_tokens. You requested up to 400 tokens, but can only afford 348. To increase, visit https://openrouter.ai/settings/credits and upgrade to a paid account', 'code': 402, 'metadata': {'provider_name': None}}, 'user_id': 'user_30ddrTlfKFNK0JqKukUDMGiFswh'}
+2025-08-03 00:14:16,863 - api - ERROR - Code generation failed: OpenRouter API error: Error code: 402 - {'error': {'message': 'This request requires more credits, or fewer max_tokens. You requested up to 400 tokens, but can only afford 348. To increase, visit https://openrouter.ai/settings/credits and upgrade to a paid account', 'code': 402, 'metadata': {'provider_name': None}}, 'user_id': 'user_30ddrTlfKFNK0JqKukUDMGiFswh'}
+2025-08-03 00:15:14,349 - httpx - INFO - HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 402 Payment Required"
+2025-08-03 00:15:14,350 - gpt - ERROR - API error: Error code: 402 - {'error': {'message': 'This request requires more credits, or fewer max_tokens. You requested up to 4096 tokens, but can only afford 348. To increase, visit https://openrouter.ai/settings/credits and upgrade to a paid account', 'code': 402, 'metadata': {'provider_name': None}}, 'user_id': 'user_30ddrTlfKFNK0JqKukUDMGiFswh'}
+2025-08-03 00:15:14,351 - api - ERROR - Code generation failed: OpenRouter API error: Error code: 402 - {'error': {'message': 'This request requires more credits, or fewer max_tokens. You requested up to 4096 tokens, but can only afford 348. To increase, visit https://openrouter.ai/settings/credits and upgrade to a paid account', 'code': 402, 'metadata': {'provider_name': None}}, 'user_id': 'user_30ddrTlfKFNK0JqKukUDMGiFswh'}
+2025-08-03 00:17:40,851 - httpx - INFO - HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 402 Payment Required"
+2025-08-03 00:17:40,852 - gpt - ERROR - API error: Error code: 402 - {'error': {'message': 'This request requires more credits, or fewer max_tokens. You requested up to 4096 tokens, but can only afford 348. To increase, visit https://openrouter.ai/settings/credits and upgrade to a paid account', 'code': 402, 'metadata': {'provider_name': None}}, 'user_id': 'user_30ddrTlfKFNK0JqKukUDMGiFswh'}
+2025-08-03 00:17:40,853 - api - ERROR - Code generation failed: OpenRouter API error: Error code: 402 - {'error': {'message': 'This request requires more credits, or fewer max_tokens. You requested up to 4096 tokens, but can only afford 348. To increase, visit https://openrouter.ai/settings/credits and upgrade to a paid account', 'code': 402, 'metadata': {'provider_name': None}}, 'user_id': 'user_30ddrTlfKFNK0JqKukUDMGiFswh'}
+2025-08-03 00:18:55,978 - httpx - INFO - HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 402 Payment Required"
+2025-08-03 00:18:55,979 - gpt - ERROR - API error: Error code: 402 - {'error': {'message': 'This request requires more credits, or fewer max_tokens. You requested up to 4096 tokens, but can only afford 348. To increase, visit https://openrouter.ai/settings/credits and upgrade to a paid account', 'code': 402, 'metadata': {'provider_name': None}}, 'user_id': 'user_30ddrTlfKFNK0JqKukUDMGiFswh'}
+2025-08-03 00:18:55,980 - api - ERROR - Code generation failed: OpenRouter API error: Error code: 402 - {'error': {'message': 'This request requires more credits, or fewer max_tokens. You requested up to 4096 tokens, but can only afford 348. To increase, visit https://openrouter.ai/settings/credits and upgrade to a paid account', 'code': 402, 'metadata': {'provider_name': None}}, 'user_id': 'user_30ddrTlfKFNK0JqKukUDMGiFswh'}
+2025-08-03 00:19:56,309 - httpx - INFO - HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 402 Payment Required"
+2025-08-03 00:19:56,310 - gpt - ERROR - API error: Error code: 402 - {'error': {'message': 'This request requires more credits, or fewer max_tokens. You requested up to 4096 tokens, but can only afford 348. To increase, visit https://openrouter.ai/settings/credits and upgrade to a paid account', 'code': 402, 'metadata': {'provider_name': None}}, 'user_id': 'user_30ddrTlfKFNK0JqKukUDMGiFswh'}
+2025-08-03 00:19:56,310 - api - ERROR - Code generation failed: OpenRouter API error: Error code: 402 - {'error': {'message': 'This request requires more credits, or fewer max_tokens. You requested up to 4096 tokens, but can only afford 348. To increase, visit https://openrouter.ai/settings/credits and upgrade to a paid account', 'code': 402, 'metadata': {'provider_name': None}}, 'user_id': 'user_30ddrTlfKFNK0JqKukUDMGiFswh'}
+2025-08-03 00:21:18,399 - httpx - INFO - HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-03 00:21:21,884 - gpt - ERROR - Code validation error: invalid syntax (<string>, line 12)
+2025-08-03 00:21:21,884 - gpt - ERROR - Invalid code generated: from manim import *
+
+class Animation(Scene):
+    def construct(self):
+        circle = Circle(color=BLUE)
+        self.play(Create(circle))
+        self.wait(1)
+        square = Square(color=RED)
+        self.play(Transform(circle, square))
+        self.wait(1)
+
+This code first creates a blue circle, waits for 1 second, then transforms the circle into a red square, and finally waits for another second before ending the animation.
+2025-08-03 00:21:21,885 - api - ERROR - Code generation failed: Invalid Manim code generated
+2025-08-03 00:23:05,146 - httpx - INFO - HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-03 00:23:06,702 - gpt - INFO - Generated code:
+from manim import *
+
+class Animation(Scene):
+    def construct(self):
+        circle = Circle(color=BLUE)
+        square = Square(color=RED)
+
+        self.play(Create(circle))
+        self.wait(1)
+        self.play(Transform(circle, square))
+        self.wait(1)
+2025-08-03 00:23:06,703 - api - INFO - Generated code for animation_6a77b5d348494cd0977d5873547da244.py:
+from manim import *
+
+class Animation(Scene):
+    def construct(self):
+        circle = Circle(color=BLUE)
+        square = Square(color=RED)
+
+        self.play(Create(circle))
+        self.wait(1)
+        self.play(Transform(circle, square))
+        self.wait(1)
+2025-08-03 00:23:06,704 - api - INFO - Saved Manim script to D:\VSCODE\majorproject\ai-manim-backend\manim_scripts\animation_6a77b5d348494cd0977d5873547da244.py
+2025-08-03 00:23:06,704 - manim - INFO - Starting render for script: D:\VSCODE\majorproject\ai-manim-backend\manim_scripts\animation_6a77b5d348494cd0977d5873547da244.py
+2025-08-03 00:23:08,960 - manim - INFO - Manim stdout: Manim Community v0.19.0
+
+[08/03/25 00:23:08] INFO     Rendered Animation                    scene.py:255
+                             Played 4 animations                               
+
+2025-08-03 00:23:08,961 - manim - ERROR - Manim stderr: 
+Animation 0: Create(Circle):   0%|          | 0/15 [00:00<?, ?it/s]
+                                                                   
+
+Animation 2: Transform(Circle):   0%|          | 0/15 [00:00<?, ?it/s]
+                                                                      
+
+2025-08-03 00:23:08,962 - manim - ERROR - Video not found at expected path: D:\VSCODE\majorproject\ai-manim-backend\media\videos\Animation\1080p60\Animation.mp4
+2025-08-03 00:23:08,963 - api - ERROR - Rendering failed: Video file not found after rendering
+2025-08-03 00:23:20,726 - httpx - INFO - HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-03 00:23:22,327 - gpt - INFO - Generated code:
+from manim import *
+
+class CircleToSquare(Scene):
+    def construct(self):
+        circle = Circle(color=BLUE)
+        square = Square(color=RED)
+
+        self.play(Create(circle))
+        self.wait(1)
+        self.play(Transform(circle, square))
+        self.wait(1)
+2025-08-03 00:23:22,328 - api - INFO - Generated code for animation_eb16f066b39647ffa4184adbca1eff7a.py:
+from manim import *
+
+class CircleToSquare(Scene):
+    def construct(self):
+        circle = Circle(color=BLUE)
+        square = Square(color=RED)
+
+        self.play(Create(circle))
+        self.wait(1)
+        self.play(Transform(circle, square))
+        self.wait(1)
+2025-08-03 00:23:22,329 - api - INFO - Saved Manim script to D:\VSCODE\majorproject\ai-manim-backend\manim_scripts\animation_eb16f066b39647ffa4184adbca1eff7a.py
+2025-08-03 00:23:22,330 - manim - INFO - Starting render for script: D:\VSCODE\majorproject\ai-manim-backend\manim_scripts\animation_eb16f066b39647ffa4184adbca1eff7a.py
+2025-08-03 00:23:24,567 - manim - INFO - Manim stdout: Manim Community v0.19.0
+
+[08/03/25 00:23:24] INFO     Rendered CircleToSquare               scene.py:255
+                             Played 4 animations                               
+
+2025-08-03 00:23:24,568 - manim - ERROR - Manim stderr: 
+Animation 0: Create(Circle):   0%|          | 0/15 [00:00<?, ?it/s]
+                                                                   
+
+Animation 2: Transform(Circle):   0%|          | 0/15 [00:00<?, ?it/s]
+                                                                      
+
+2025-08-03 00:23:24,569 - manim - ERROR - Video not found at expected path: D:\VSCODE\majorproject\ai-manim-backend\media\videos\CircleToSquare\1080p60\CircleToSquare.mp4
+2025-08-03 00:23:24,570 - api - ERROR - Rendering failed: Video file not found after rendering
+2025-08-03 00:27:07,283 - httpx - INFO - HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 402 Payment Required"
+2025-08-03 00:27:07,284 - gpt - ERROR - API error: Error code: 402 - {'error': {'message': 'This request requires more credits, or fewer max_tokens. You requested up to 300 tokens, but can only afford 283. To increase, visit https://openrouter.ai/settings/credits and upgrade to a paid account', 'code': 402, 'metadata': {'provider_name': None}}, 'user_id': 'user_30ddrTlfKFNK0JqKukUDMGiFswh'}
+2025-08-03 00:27:07,285 - api - ERROR - Code generation failed: OpenRouter API error: Error code: 402 - {'error': {'message': 'This request requires more credits, or fewer max_tokens. You requested up to 300 tokens, but can only afford 283. To increase, visit https://openrouter.ai/settings/credits and upgrade to a paid account', 'code': 402, 'metadata': {'provider_name': None}}, 'user_id': 'user_30ddrTlfKFNK0JqKukUDMGiFswh'}
+2025-08-03 00:29:06,848 - httpx - INFO - HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 402 Payment Required"
+2025-08-03 00:29:06,850 - gpt - ERROR - API error: Error code: 402 - {'error': {'message': 'This request requires more credits, or fewer max_tokens. You requested up to 300 tokens, but can only afford 283. To increase, visit https://openrouter.ai/settings/credits and upgrade to a paid account', 'code': 402, 'metadata': {'provider_name': None}}, 'user_id': 'user_30ddrTlfKFNK0JqKukUDMGiFswh'}
+2025-08-03 00:29:06,851 - api - ERROR - Code generation failed: OpenRouter API error: Error code: 402 - {'error': {'message': 'This request requires more credits, or fewer max_tokens. You requested up to 300 tokens, but can only afford 283. To increase, visit https://openrouter.ai/settings/credits and upgrade to a paid account', 'code': 402, 'metadata': {'provider_name': None}}, 'user_id': 'user_30ddrTlfKFNK0JqKukUDMGiFswh'}
+2025-08-03 00:29:19,186 - httpx - INFO - HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 402 Payment Required"
+2025-08-03 00:29:19,187 - gpt - ERROR - API error: Error code: 402 - {'error': {'message': 'This request requires more credits, or fewer max_tokens. You requested up to 300 tokens, but can only afford 283. To increase, visit https://openrouter.ai/settings/credits and upgrade to a paid account', 'code': 402, 'metadata': {'provider_name': None}}, 'user_id': 'user_30ddrTlfKFNK0JqKukUDMGiFswh'}
+2025-08-03 00:29:19,188 - api - ERROR - Code generation failed: OpenRouter API error: Error code: 402 - {'error': {'message': 'This request requires more credits, or fewer max_tokens. You requested up to 300 tokens, but can only afford 283. To increase, visit https://openrouter.ai/settings/credits and upgrade to a paid account', 'code': 402, 'metadata': {'provider_name': None}}, 'user_id': 'user_30ddrTlfKFNK0JqKukUDMGiFswh'}
+2025-08-03 00:32:48,730 - api - INFO - Starting AI Manim Backend...
+2025-08-03 00:32:48,730 - api - INFO - Server running at http://127.0.0.1:8000
+2025-08-03 00:32:48,731 - api - INFO - API documentation available at http://127.0.0.1:8000/docs
+2025-08-03 00:33:04,693 - api - INFO - Starting AI Manim Backend...
+2025-08-03 00:33:04,693 - api - INFO - Server running at http://127.0.0.1:8000
+2025-08-03 00:33:04,693 - api - INFO - API documentation available at http://127.0.0.1:8000/docs
+2025-08-03 00:33:32,647 - httpx - INFO - HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 402 Payment Required"
+2025-08-03 00:33:32,648 - gpt - ERROR - API error: Error code: 402 - {'error': {'message': 'This request requires more credits, or fewer max_tokens. You requested up to 300 tokens, but can only afford 283. To increase, visit https://openrouter.ai/settings/credits and upgrade to a paid account', 'code': 402, 'metadata': {'provider_name': None}}, 'user_id': 'user_30ddrTlfKFNK0JqKukUDMGiFswh'}
+2025-08-03 00:33:32,648 - api - ERROR - Code generation failed: OpenRouter API error: Error code: 402 - {'error': {'message': 'This request requires more credits, or fewer max_tokens. You requested up to 300 tokens, but can only afford 283. To increase, visit https://openrouter.ai/settings/credits and upgrade to a paid account', 'code': 402, 'metadata': {'provider_name': None}}, 'user_id': 'user_30ddrTlfKFNK0JqKukUDMGiFswh'}
+2025-08-03 00:36:46,615 - httpx - INFO - HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 402 Payment Required"
+2025-08-03 00:36:46,616 - gpt - ERROR - API error: Error code: 402 - {'error': {'message': 'This request requires more credits, or fewer max_tokens. You requested up to 300 tokens, but can only afford 283. To increase, visit https://openrouter.ai/settings/credits and upgrade to a paid account', 'code': 402, 'metadata': {'provider_name': None}}, 'user_id': 'user_30ddrTlfKFNK0JqKukUDMGiFswh'}
+2025-08-03 00:36:46,617 - api - ERROR - Code generation failed: OpenRouter API error: Error code: 402 - {'error': {'message': 'This request requires more credits, or fewer max_tokens. You requested up to 300 tokens, but can only afford 283. To increase, visit https://openrouter.ai/settings/credits and upgrade to a paid account', 'code': 402, 'metadata': {'provider_name': None}}, 'user_id': 'user_30ddrTlfKFNK0JqKukUDMGiFswh'}
+2025-08-03 00:37:02,026 - api - INFO - Starting AI Manim Backend...
+2025-08-03 00:37:02,026 - api - INFO - Server running at http://127.0.0.1:8000
+2025-08-03 00:37:02,026 - api - INFO - API documentation available at http://127.0.0.1:8000/docs
+2025-08-03 00:37:31,494 - httpx - INFO - HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 401 Unauthorized"
+2025-08-03 00:37:31,496 - gpt - ERROR - API error: Error code: 401 - {'error': {'message': 'No auth credentials found', 'code': 401}}
+2025-08-03 00:37:31,496 - api - ERROR - Code generation failed: OpenRouter API error: Error code: 401 - {'error': {'message': 'No auth credentials found', 'code': 401}}
+2025-08-03 00:38:17,184 - api - INFO - Starting AI Manim Backend...
+2025-08-03 00:38:17,184 - api - INFO - Server running at http://127.0.0.1:8000
+2025-08-03 00:38:17,185 - api - INFO - API documentation available at http://127.0.0.1:8000/docs
+2025-08-03 00:38:38,805 - httpx - INFO - HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 402 Payment Required"
+2025-08-03 00:38:38,808 - gpt - ERROR - API error: Error code: 402 - {'error': {'message': 'This request requires more credits, or fewer max_tokens. You requested up to 300 tokens, but can only afford 283. To increase, visit https://openrouter.ai/settings/credits and upgrade to a paid account', 'code': 402, 'metadata': {'provider_name': None}}, 'user_id': 'user_30ddrTlfKFNK0JqKukUDMGiFswh'}
+2025-08-03 00:38:38,810 - api - ERROR - Code generation failed: OpenRouter API error: Error code: 402 - {'error': {'message': 'This request requires more credits, or fewer max_tokens. You requested up to 300 tokens, but can only afford 283. To increase, visit https://openrouter.ai/settings/credits and upgrade to a paid account', 'code': 402, 'metadata': {'provider_name': None}}, 'user_id': 'user_30ddrTlfKFNK0JqKukUDMGiFswh'}
+2025-08-03 00:40:28,178 - api - INFO - Starting AI Manim Backend...
+2025-08-03 00:40:28,178 - api - INFO - Server running at http://127.0.0.1:8000
+2025-08-03 00:40:28,178 - api - INFO - API documentation available at http://127.0.0.1:8000/docs
+2025-08-03 00:40:38,628 - api - INFO - Starting AI Manim Backend...
+2025-08-03 00:40:38,629 - api - INFO - Server running at http://127.0.0.1:8000
+2025-08-03 00:40:38,629 - api - INFO - API documentation available at http://127.0.0.1:8000/docs
+2025-08-03 00:41:02,694 - httpx - INFO - HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-03 00:41:03,885 - gpt - INFO - Generated code:
+from manim import *
+
+class TransformCircleToSquare(Scene):
+    def construct(self):
+        circle = Circle(color=BLUE)
+        square = Square(color=RED)
+        self.play(Transform(circle, square))
+2025-08-03 00:41:03,887 - api - INFO - Generated code:
+from manim import *
+
+class TransformCircleToSquare(Scene):
+    def construct(self):
+        circle = Circle(color=BLUE)
+        square = Square(color=RED)
+        self.play(Transform(circle, square))
+2025-08-03 00:41:03,889 - api - INFO - Saved script to: D:\VSCODE\majorproject\ai-manim-backend\manim_scripts\animation_b943eb14da1d458ab7a54d028cee2585.py
+2025-08-03 00:41:03,890 - manim - INFO - Starting render for script: D:\VSCODE\majorproject\ai-manim-backend\manim_scripts\animation_b943eb14da1d458ab7a54d028cee2585.py
+2025-08-03 00:41:03,892 - manim - INFO - Running command: manim -pql --media_dir C:\Users\ANUJSA~1\AppData\Local\Temp\tmp7b2s6j1o\media D:\VSCODE\majorproject\ai-manim-backend\manim_scripts\animation_b943eb14da1d458ab7a54d028cee2585.py
+2025-08-03 00:41:05,991 - manim - INFO - Manim stdout: Manim Community v0.19.0
+
+[08/03/25 00:41:05] INFO     Rendered TransformCircleToSquare      scene.py:255
+                             Played 1 animations                               
+
+2025-08-03 00:41:05,991 - manim - ERROR - Manim stderr: 
+Animation 0: Transform(Circle):   0%|          | 0/15 [00:00<?, ?it/s]
+                                                                      
+
+2025-08-03 00:41:05,992 - manim - ERROR - No video files found in media directory
+2025-08-03 00:41:05,993 - api - ERROR - Rendering failed: Video file not found after rendering
+2025-08-03 00:42:10,671 - api - INFO - Starting AI Manim Backend...
+2025-08-03 00:42:10,671 - api - INFO - Server running at http://127.0.0.1:8000
+2025-08-03 00:42:10,671 - api - INFO - API documentation available at http://127.0.0.1:8000/docs
+2025-08-03 00:42:40,577 - httpx - INFO - HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-03 00:42:42,620 - gpt - INFO - Generated code:
+from manim import *
+
+class TransformCircleToSquare(Scene):
+    def construct(self):
+        circle = Circle(color=BLUE)
+        square = Square(color=RED)
+        self.play(Transform(circle, square))
+        self.wait()
+2025-08-03 00:42:42,621 - api - INFO - Generated code:
+from manim import *
+
+class TransformCircleToSquare(Scene):
+    def construct(self):
+        circle = Circle(color=BLUE)
+        square = Square(color=RED)
+        self.play(Transform(circle, square))
+        self.wait()
+2025-08-03 00:42:42,621 - api - INFO - Saved script to: D:\VSCODE\majorproject\ai-manim-backend\manim_scripts\animation_35ee8e9f1c22415793143dfdfa9a72cf.py
+2025-08-03 00:42:42,622 - manim - INFO - Starting render for script: D:\VSCODE\majorproject\ai-manim-backend\manim_scripts\animation_35ee8e9f1c22415793143dfdfa9a72cf.py
+2025-08-03 00:42:42,622 - manim - INFO - Running command: manim -pql --media_dir D:\VSCODE\majorproject\ai-manim-backend\media D:\VSCODE\majorproject\ai-manim-backend\manim_scripts\animation_35ee8e9f1c22415793143dfdfa9a72cf.py
+2025-08-03 00:42:44,707 - manim - INFO - Manim stdout: Manim Community v0.19.0
+
+[08/03/25 00:42:44] INFO     Rendered TransformCircleToSquare      scene.py:255
+                             Played 2 animations                               
+
+2025-08-03 00:42:44,707 - manim - ERROR - Manim stderr: 
+Animation 0: Transform(Circle):   0%|          | 0/15 [00:00<?, ?it/s]
+                                                                      
+
+2025-08-03 00:42:44,708 - manim - ERROR - No video files found after rendering
+2025-08-03 00:42:44,709 - api - ERROR - Rendering failed: Video file not found after rendering
+2025-08-03 00:43:32,894 - api - INFO - Starting AI Manim Backend...
+2025-08-03 00:43:32,895 - api - INFO - Server running at http://127.0.0.1:8000
+2025-08-03 00:43:32,895 - api - INFO - API documentation available at http://127.0.0.1:8000/docs
+2025-08-03 00:43:58,317 - httpx - INFO - HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-03 00:43:59,757 - gpt - ERROR - Code validation error: invalid syntax (<string>, line 9)
+2025-08-03 00:43:59,757 - gpt - ERROR - Invalid code generated: from manim import *
+
+class CircleToSquare(Scene):
+    def construct(self):
+        circle = Circle(color=BLUE)
+        square = Square(color=RED)
+        self.play(Transform(circle, square))
+        self.wait()
+This will render a simple animation of a blue circle transforming into a red square.
+2025-08-03 00:43:59,757 - api - ERROR - Code generation failed: Invalid Manim code generated
+2025-08-03 00:44:10,233 - httpx - INFO - HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-03 00:44:11,955 - gpt - INFO - Generated code:
+from manim import *
+
+class TransformCircleToSquare(Scene):
+    def construct(self):
+        circle = Circle(color=BLUE)
+        square = Square(color=RED)
+
+        self.play(Create(circle))
+        self.wait(1)
+        self.play(Transform(circle, square))
+        self.wait(1)
+2025-08-03 00:44:11,956 - api - INFO - Generated code:
+from manim import *
+
+class TransformCircleToSquare(Scene):
+    def construct(self):
+        circle = Circle(color=BLUE)
+        square = Square(color=RED)
+
+        self.play(Create(circle))
+        self.wait(1)
+        self.play(Transform(circle, square))
+        self.wait(1)
+2025-08-03 00:44:11,957 - api - INFO - Saved script to: D:\VSCODE\majorproject\ai-manim-backend\manim_scripts\animation_c2615f678f7c4af5bb07c150a3e979e7.py
+2025-08-03 00:44:11,957 - manim - INFO - Starting render for script: D:\VSCODE\majorproject\ai-manim-backend\manim_scripts\animation_c2615f678f7c4af5bb07c150a3e979e7.py
+2025-08-03 00:44:11,957 - manim - INFO - Running command: manim -pql --media_dir D:\VSCODE\majorproject\ai-manim-backend\media D:\VSCODE\majorproject\ai-manim-backend\manim_scripts\animation_c2615f678f7c4af5bb07c150a3e979e7.py
+2025-08-03 00:44:14,239 - manim - INFO - Manim stdout: Manim Community v0.19.0
+
+[08/03/25 00:44:13] INFO     Rendered TransformCircleToSquare      scene.py:255
+                             Played 4 animations                               
+
+2025-08-03 00:44:14,278 - manim - ERROR - Manim stderr: 
+Animation 0: Create(Circle):   0%|          | 0/15 [00:00<?, ?it/s]
+                                                                   
+
+Animation 2: Transform(Circle):   0%|          | 0/15 [00:00<?, ?it/s]
+                                                                      
+
+2025-08-03 00:44:14,280 - manim - ERROR - No video files found after rendering
+2025-08-03 00:44:14,280 - api - ERROR - Rendering failed: Video file not found after rendering
+2025-08-03 00:44:20,448 - httpx - INFO - HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-03 00:44:22,083 - gpt - ERROR - Code validation error: invalid syntax (<string>, line 8)
+2025-08-03 00:44:22,083 - gpt - ERROR - Invalid code generated: from manim import *
+
+class TransformCircleToSquare(Scene):
+    def construct(self):
+        circle = Circle(color=BLUE)
+        square = Square(color=RED)
+        self.play(Transform(circle, square))
+This code will create an animation where a blue circle transforms into a red square.
+2025-08-03 00:44:22,085 - api - ERROR - Code generation failed: Invalid Manim code generated
+2025-08-03 00:44:25,741 - httpx - INFO - HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-03 00:44:26,927 - gpt - INFO - Generated code:
+from manim import *
+
+class CircleToSquare(Scene):
+    def construct(self):
+        circle = Circle(color=BLUE)
+        square = Square(color=RED)
+        self.play(Transform(circle, square))
+        self.wait()
+2025-08-03 00:44:26,927 - api - INFO - Generated code:
+from manim import *
+
+class CircleToSquare(Scene):
+    def construct(self):
+        circle = Circle(color=BLUE)
+        square = Square(color=RED)
+        self.play(Transform(circle, square))
+        self.wait()
+2025-08-03 00:44:26,929 - api - INFO - Saved script to: D:\VSCODE\majorproject\ai-manim-backend\manim_scripts\animation_5045296a20744531920491d3dee6b1ab.py
+2025-08-03 00:44:26,929 - manim - INFO - Starting render for script: D:\VSCODE\majorproject\ai-manim-backend\manim_scripts\animation_5045296a20744531920491d3dee6b1ab.py
+2025-08-03 00:44:26,930 - manim - INFO - Running command: manim -pql --media_dir D:\VSCODE\majorproject\ai-manim-backend\media D:\VSCODE\majorproject\ai-manim-backend\manim_scripts\animation_5045296a20744531920491d3dee6b1ab.py
+2025-08-03 00:44:29,042 - manim - INFO - Manim stdout: Manim Community v0.19.0
+
+[08/03/25 00:44:28] INFO     Rendered CircleToSquare               scene.py:255
+                             Played 2 animations                               
+
+2025-08-03 00:44:29,042 - manim - ERROR - Manim stderr: 
+Animation 0: Transform(Circle):   0%|          | 0/15 [00:00<?, ?it/s]
+                                                                      
+
+2025-08-03 00:44:29,044 - manim - ERROR - No video files found after rendering
+2025-08-03 00:44:29,044 - api - ERROR - Rendering failed: Video file not found after rendering
+2025-08-03 00:44:49,132 - httpx - INFO - HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-03 00:44:50,324 - gpt - INFO - Generated code:
+from manim import *
+
+class TransformCircleToSquare(Scene):
+    def construct(self):
+        circle = Circle(color=BLUE)
+        square = Square(color=RED)
+        self.play(Transform(circle, square))
+2025-08-03 00:44:50,325 - api - INFO - Generated code:
+from manim import *
+
+class TransformCircleToSquare(Scene):
+    def construct(self):
+        circle = Circle(color=BLUE)
+        square = Square(color=RED)
+        self.play(Transform(circle, square))
+2025-08-03 00:44:50,326 - api - INFO - Saved script to: D:\VSCODE\majorproject\ai-manim-backend\manim_scripts\animation_1fa2414894b34cc3a7eb6bb4b3ef7360.py
+2025-08-03 00:44:50,326 - manim - INFO - Starting render for script: D:\VSCODE\majorproject\ai-manim-backend\manim_scripts\animation_1fa2414894b34cc3a7eb6bb4b3ef7360.py
+2025-08-03 00:44:50,327 - manim - INFO - Running command: manim -pql --media_dir D:\VSCODE\majorproject\ai-manim-backend\media D:\VSCODE\majorproject\ai-manim-backend\manim_scripts\animation_1fa2414894b34cc3a7eb6bb4b3ef7360.py
+2025-08-03 00:44:52,408 - manim - INFO - Manim stdout: Manim Community v0.19.0
+
+[08/03/25 00:44:52] INFO     Rendered TransformCircleToSquare      scene.py:255
+                             Played 1 animations                               
+
+2025-08-03 00:44:52,409 - manim - ERROR - Manim stderr: 
+Animation 0: Transform(Circle):   0%|          | 0/15 [00:00<?, ?it/s]
+                                                                      
+
+2025-08-03 00:44:52,410 - manim - ERROR - No video files found after rendering
+2025-08-03 00:44:52,410 - api - ERROR - Rendering failed: Video file not found after rendering
+2025-08-03 00:44:56,414 - httpx - INFO - HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-03 00:44:57,507 - gpt - INFO - Generated code:
+from manim import *
+
+class TransformCircleToSquare(Scene):
+    def construct(self):
+        circle = Circle(color=BLUE)
+        square = Square(color=RED)
+        self.play(Transform(circle, square))
+2025-08-03 00:44:57,507 - api - INFO - Generated code:
+from manim import *
+
+class TransformCircleToSquare(Scene):
+    def construct(self):
+        circle = Circle(color=BLUE)
+        square = Square(color=RED)
+        self.play(Transform(circle, square))
+2025-08-03 00:44:57,508 - api - INFO - Saved script to: D:\VSCODE\majorproject\ai-manim-backend\manim_scripts\animation_b5d3531b5f1148ebb688605a61ba49cb.py
+2025-08-03 00:44:57,508 - manim - INFO - Starting render for script: D:\VSCODE\majorproject\ai-manim-backend\manim_scripts\animation_b5d3531b5f1148ebb688605a61ba49cb.py
+2025-08-03 00:44:57,509 - manim - INFO - Running command: manim -pql --media_dir D:\VSCODE\majorproject\ai-manim-backend\media D:\VSCODE\majorproject\ai-manim-backend\manim_scripts\animation_b5d3531b5f1148ebb688605a61ba49cb.py
+2025-08-03 00:44:59,399 - manim - INFO - Manim stdout: Manim Community v0.19.0
+
+[08/03/25 00:44:59] INFO     Rendered TransformCircleToSquare      scene.py:255
+                             Played 1 animations                               
+
+2025-08-03 00:44:59,399 - manim - ERROR - Manim stderr: 
+Animation 0: Transform(Circle):   0%|          | 0/15 [00:00<?, ?it/s]
+                                                                      
+
+2025-08-03 00:44:59,401 - manim - ERROR - No video files found after rendering
+2025-08-03 00:44:59,401 - api - ERROR - Rendering failed: Video file not found after rendering
+2025-08-03 00:48:35,762 - api - INFO - Starting AI Manim Backend...
+2025-08-03 00:48:35,763 - api - INFO - Server running at http://127.0.0.1:8000
+2025-08-03 00:48:35,763 - api - INFO - API documentation available at http://127.0.0.1:8000/docs
+2025-08-03 00:48:58,419 - httpx - INFO - HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-03 00:48:59,544 - gpt - INFO - Generated code:
+from manim import *
+
+class TransformCircleToSquare(Scene):
+    def construct(self):
+        circle = Circle(color=BLUE)
+        square = Square(color=RED)
+        self.play(Transform(circle, square))
+2025-08-03 00:48:59,545 - api - INFO - Generated code:
+from manim import *
+
+class TransformCircleToSquare(Scene):
+    def construct(self):
+        circle = Circle(color=BLUE)
+        square = Square(color=RED)
+        self.play(Transform(circle, square))
+2025-08-03 00:48:59,546 - api - INFO - Saved script to: D:\VSCODE\majorproject\ai-manim-backend\manim_scripts\animation_65c5aa1c8d284d50a0aed828ace60e77.py
+2025-08-03 00:48:59,546 - manim - INFO - Starting render for script: D:\VSCODE\majorproject\ai-manim-backend\manim_scripts\animation_65c5aa1c8d284d50a0aed828ace60e77.py
+2025-08-03 00:48:59,548 - manim - INFO - Using scene name: TransformCircleToSquare
+2025-08-03 00:48:59,548 - manim - INFO - Running command: manim -pql --media_dir D:\VSCODE\majorproject\ai-manim-backend\media D:\VSCODE\majorproject\ai-manim-backend\manim_scripts\animation_65c5aa1c8d284d50a0aed828ace60e77.py TransformCircleToSquare
+2025-08-03 00:49:01,639 - manim - INFO - Manim stdout: Manim Community v0.19.0
+
+[08/03/25 00:49:01] INFO     Rendered TransformCircleToSquare      scene.py:255
+                             Played 1 animations                               
+
+2025-08-03 00:49:01,640 - manim - ERROR - Manim stderr: 
+Animation 0: Transform(Circle):   0%|          | 0/15 [00:00<?, ?it/s]
+                                                                      
+
+2025-08-03 00:49:01,640 - manim - INFO - Checking for mp4 in: D:\VSCODE\majorproject\ai-manim-backend\media\videos\TransformCircleToSquare
+2025-08-03 00:49:01,641 - manim - INFO - Dir contents: []
+2025-08-03 00:49:01,642 - manim - ERROR - No video files found after rendering
+2025-08-03 00:49:01,642 - api - ERROR - Rendering failed: Video file not found after rendering
+2025-08-03 00:57:36,909 - httpx - INFO - HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-03 00:57:38,580 - gpt - INFO - Generated code:
+from manim import *
+
+class CircleToSquare(Scene):
+    def construct(self):
+        circle = Circle(color=BLUE)
+        square = Square(color=RED)
+        self.play(Transform(circle, square))
+2025-08-03 00:57:38,581 - api - INFO - Generated code:
+from manim import *
+
+class CircleToSquare(Scene):
+    def construct(self):
+        circle = Circle(color=BLUE)
+        square = Square(color=RED)
+        self.play(Transform(circle, square))
+2025-08-03 00:57:38,582 - api - INFO - Saved script to: D:\VSCODE\majorproject\ai-manim-backend\manim_scripts\animation_e45a4f6da9564cf7976c20c3ededf076.py
+2025-08-03 00:57:38,582 - manim - INFO - Starting render for script: D:\VSCODE\majorproject\ai-manim-backend\manim_scripts\animation_e45a4f6da9564cf7976c20c3ededf076.py
+2025-08-03 00:57:38,604 - manim - INFO - Using scene name: CircleToSquare
+2025-08-03 00:57:38,604 - manim - INFO - Running command: manim -pql --media_dir D:\VSCODE\majorproject\ai-manim-backend\media D:\VSCODE\majorproject\ai-manim-backend\manim_scripts\animation_e45a4f6da9564cf7976c20c3ededf076.py CircleToSquare
+2025-08-03 00:57:40,296 - manim - INFO - Manim stdout: Manim Community v0.19.0
+
+[08/03/25 00:57:40] INFO     Rendered CircleToSquare               scene.py:255
+                             Played 1 animations                               
+
+2025-08-03 00:57:40,297 - manim - ERROR - Manim stderr: 
+Animation 0: Transform(Circle):   0%|          | 0/15 [00:00<?, ?it/s]
+                                                                      
+
+2025-08-03 00:57:40,297 - manim - INFO - Checking for mp4 in: D:\VSCODE\majorproject\ai-manim-backend\media\videos\CircleToSquare
+2025-08-03 00:57:40,298 - manim - INFO - Dir contents: []
+2025-08-03 00:57:40,299 - manim - ERROR - No video files found after rendering
+2025-08-03 00:57:40,300 - api - ERROR - Rendering failed: Video file not found after rendering
+2025-08-03 00:57:57,926 - api - INFO - Starting AI Manim Backend...
+2025-08-03 00:57:57,927 - api - INFO - Server running at http://127.0.0.1:8000
+2025-08-03 00:57:57,927 - api - INFO - API documentation available at http://127.0.0.1:8000/docs
+2025-08-03 00:58:21,605 - httpx - INFO - HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 402 Payment Required"
+2025-08-03 00:58:21,606 - gpt - ERROR - API error: Error code: 402 - {'error': {'message': 'This request requires more credits, or fewer max_tokens. You requested up to 150 tokens, but can only afford 143. To increase, visit https://openrouter.ai/settings/credits and upgrade to a paid account', 'code': 402, 'metadata': {'provider_name': None}}, 'user_id': 'user_30ddrTlfKFNK0JqKukUDMGiFswh'}
+2025-08-03 00:58:21,607 - api - ERROR - Code generation failed: OpenRouter API error: Error code: 402 - {'error': {'message': 'This request requires more credits, or fewer max_tokens. You requested up to 150 tokens, but can only afford 143. To increase, visit https://openrouter.ai/settings/credits and upgrade to a paid account', 'code': 402, 'metadata': {'provider_name': None}}, 'user_id': 'user_30ddrTlfKFNK0JqKukUDMGiFswh'}
+2025-08-03 01:00:40,815 - api - INFO - Starting AI Manim Backend...
+2025-08-03 01:00:40,815 - api - INFO - Server running at http://127.0.0.1:8000
+2025-08-03 01:00:40,815 - api - INFO - API documentation available at http://127.0.0.1:8000/docs
+2025-08-03 01:00:46,544 - gpt - INFO - Using template code:
+from manim import *
+class Animation(Scene):
+    def construct(self):
+        circle = Circle(color=BLUE)
+        square = Square(color=RED)
+        self.play(Create(circle))
+        self.play(Transform(circle, square))
+        self.wait()
+2025-08-03 01:00:46,545 - api - INFO - Generated code:
+from manim import *
+class Animation(Scene):
+    def construct(self):
+        circle = Circle(color=BLUE)
+        square = Square(color=RED)
+        self.play(Create(circle))
+        self.play(Transform(circle, square))
+        self.wait()
+2025-08-03 01:00:46,549 - api - INFO - Saved script to: D:\VSCODE\majorproject\ai-manim-backend\manim_scripts\animation_93f06788a55a420084f738af68e92dbf.py
+2025-08-03 01:00:46,551 - manim - INFO - Starting render for script: D:\VSCODE\majorproject\ai-manim-backend\manim_scripts\animation_93f06788a55a420084f738af68e92dbf.py
+2025-08-03 01:00:46,570 - manim - INFO - Using scene name: Animation
+2025-08-03 01:00:46,571 - manim - INFO - Running command: manim -pql --media_dir D:\VSCODE\majorproject\ai-manim-backend\media D:\VSCODE\majorproject\ai-manim-backend\manim_scripts\animation_93f06788a55a420084f738af68e92dbf.py Animation
+2025-08-03 01:00:48,744 - manim - INFO - Manim stdout: Manim Community v0.19.0
+
+[08/03/25 01:00:48] INFO     Rendered Animation                    scene.py:255
+                             Played 3 animations                               
+
+2025-08-03 01:00:48,745 - manim - ERROR - Manim stderr: 
+Animation 0: Create(Circle):   0%|          | 0/15 [00:00<?, ?it/s]
+                                                                   
+
+Animation 1: Transform(Circle):   0%|          | 0/15 [00:00<?, ?it/s]
+                                                                      
+
+2025-08-03 01:00:48,745 - manim - INFO - Checking for mp4 in: D:\VSCODE\majorproject\ai-manim-backend\media\videos\Animation
+2025-08-03 01:00:48,746 - manim - INFO - Dir contents: []
+2025-08-03 01:00:48,748 - manim - ERROR - No video files found after rendering
+2025-08-03 01:00:48,748 - api - ERROR - Rendering failed: Video file not found after rendering
+2025-08-03 01:04:17,964 - api - INFO - Starting AI Manim Backend...
+2025-08-03 01:04:17,965 - api - INFO - Server running at http://127.0.0.1:8000
+2025-08-03 01:04:17,965 - api - INFO - API documentation available at http://127.0.0.1:8000/docs
+2025-08-03 16:35:34,026 - api - INFO - Starting AI Manim Backend...
+2025-08-03 16:35:34,027 - api - INFO - Server running at http://127.0.0.1:8000
+2025-08-03 16:35:34,028 - api - INFO - API documentation available at http://127.0.0.1:8000/docs
+2025-08-03 16:37:01,875 - httpx - INFO - HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 402 Payment Required"
+2025-08-03 16:37:01,935 - gpt - ERROR - API error: Error code: 402 - {'error': {'message': 'This request requires more credits, or fewer max_tokens. You requested up to 150 tokens, but can only afford 143. To increase, visit https://openrouter.ai/settings/credits and upgrade to a paid account', 'code': 402, 'metadata': {'provider_name': None}}, 'user_id': 'user_30ddrTlfKFNK0JqKukUDMGiFswh'}
+2025-08-03 16:37:01,936 - api - ERROR - Code generation failed: OpenRouter API error: Error code: 402 - {'error': {'message': 'This request requires more credits, or fewer max_tokens. You requested up to 150 tokens, but can only afford 143. To increase, visit https://openrouter.ai/settings/credits and upgrade to a paid account', 'code': 402, 'metadata': {'provider_name': None}}, 'user_id': 'user_30ddrTlfKFNK0JqKukUDMGiFswh'}
+2025-08-03 16:44:56,059 - api - INFO - Starting AI Manim Backend...
+2025-08-03 16:44:56,059 - api - INFO - Server running at http://127.0.0.1:8000
+2025-08-03 16:44:56,060 - api - INFO - API documentation available at http://127.0.0.1:8000/docs
+2025-08-03 16:45:30,619 - api - INFO - Starting AI Manim Backend...
+2025-08-03 16:45:30,619 - api - INFO - Server running at http://127.0.0.1:8000
+2025-08-03 16:45:30,620 - api - INFO - API documentation available at http://127.0.0.1:8000/docs
+2025-08-03 16:45:40,873 - api - INFO - Starting AI Manim Backend...
+2025-08-03 16:45:40,874 - api - INFO - Server running at http://127.0.0.1:8000
+2025-08-03 16:45:40,874 - api - INFO - API documentation available at http://127.0.0.1:8000/docs
+2025-08-03 16:45:52,420 - httpx - INFO - HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-03 16:45:54,221 - gpt - INFO - Generated code:
+from manim import *
+
+class SquareToRectangle(Scene):
+    def construct(self):
+        square = Square()
+        self.play(Create(square))
+        rectangle = square.scale(1.5, about_edge=LEFT)
+        self.play(Transform(square, rectangle))
+        self.wait()
+2025-08-03 16:45:54,222 - api - INFO - Generated code:
+from manim import *
+
+class SquareToRectangle(Scene):
+    def construct(self):
+        square = Square()
+        self.play(Create(square))
+        rectangle = square.scale(1.5, about_edge=LEFT)
+        self.play(Transform(square, rectangle))
+        self.wait()
+2025-08-03 16:45:54,224 - api - INFO - Saved script to: D:\VSCODE\majorproject\ai-manim-backend\manim_scripts\animation_227c6381d37d4e49855b5c0c939a38fc.py
+2025-08-03 16:45:54,225 - manim - INFO - Starting render for script: D:\VSCODE\majorproject\ai-manim-backend\manim_scripts\animation_227c6381d37d4e49855b5c0c939a38fc.py
+2025-08-03 16:45:54,241 - manim - INFO - Using scene name: SquareToRectangle
+2025-08-03 16:45:54,241 - manim - INFO - Running command: manim -pql --media_dir D:\VSCODE\majorproject\ai-manim-backend\media D:\VSCODE\majorproject\ai-manim-backend\manim_scripts\animation_227c6381d37d4e49855b5c0c939a38fc.py SquareToRectangle
+2025-08-03 16:45:57,752 - manim - INFO - Manim stdout: Manim Community v0.19.0
+
+[08/03/25 16:45:57] INFO     Rendered SquareToRectangle            scene.py:255
+                             Played 3 animations                               
+
+2025-08-03 16:45:57,753 - manim - ERROR - Manim stderr: 
+Animation 0: Create(Square):   0%|          | 0/15 [00:00<?, ?it/s]
+                                                                   
+
+Animation 1: Transform(Square):   0%|          | 0/15 [00:00<?, ?it/s]
+                                                                      
+
+2025-08-03 16:45:57,754 - manim - INFO - Checking for mp4 in: D:\VSCODE\majorproject\ai-manim-backend\media\videos\SquareToRectangle
+2025-08-03 16:45:57,755 - manim - INFO - Dir contents: []
+2025-08-03 16:45:57,757 - manim - ERROR - No video files found after rendering
+2025-08-03 16:45:57,757 - api - ERROR - Rendering failed: Video file not found after rendering
+2025-08-03 16:47:19,464 - api - INFO - Starting AI Manim Backend...
+2025-08-03 16:47:19,465 - api - INFO - Server running at http://127.0.0.1:8000
+2025-08-03 16:47:19,465 - api - INFO - API documentation available at http://127.0.0.1:8000/docs
+2025-08-03 16:47:24,346 - api - INFO - Starting AI Manim Backend...
+2025-08-03 16:47:24,346 - api - INFO - Server running at http://127.0.0.1:8000
+2025-08-03 16:47:24,346 - api - INFO - API documentation available at http://127.0.0.1:8000/docs
+2025-08-03 16:47:28,379 - api - INFO - Starting AI Manim Backend...
+2025-08-03 16:47:28,379 - api - INFO - Server running at http://127.0.0.1:8000
+2025-08-03 16:47:28,380 - api - INFO - API documentation available at http://127.0.0.1:8000/docs

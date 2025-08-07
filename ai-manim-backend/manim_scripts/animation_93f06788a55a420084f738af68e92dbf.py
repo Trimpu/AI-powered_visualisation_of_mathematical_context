@@ -1,0 +1,8 @@
+from manim import *
+class Animation(Scene):
+    def construct(self):
+        circle = Circle(color=BLUE)
+        square = Square(color=RED)
+        self.play(Create(circle))
+        self.play(Transform(circle, square))
+        self.wait()
