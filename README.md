@@ -1,2 +1,1 @@
-# AI-powered_visualisation_of_mathematical_context
-math visualizer
+
