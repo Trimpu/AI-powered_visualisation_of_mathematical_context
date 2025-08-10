@@ -1,6 +1,7 @@
 from fastapi import FastAPI, HTTPException
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi.responses import JSONResponse
+from fastapi.staticfiles import StaticFiles
 from app.core.config import settings
 from app.core.logging import loggers
 from app.api.routes import router as api_router
@@ -22,6 +23,9 @@ app.add_middleware(
 
 # Include API router
 app.include_router(api_router, prefix=settings.API_V1_STR)
+
+# Mount static files for video serving
+app.mount("/videos", StaticFiles(directory=settings.RENDERS_DIR), name="videos")
 
 @app.on_event("startup")
 async def startup_event():

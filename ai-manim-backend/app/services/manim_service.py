@@ -46,10 +46,12 @@ def render_video(script_path: Path) -> tuple[Path | None, str | None]:
         scene_name = get_scene_name(script_path)
         logger.info(f"Using scene name: {scene_name}")
         
-        # Run manim with explicit scene name
+        # Run manim with explicit scene name (removed -p for preview mode)
+        # Use the virtual environment's Python executable
+        python_path = settings.BASE_DIR / ".venv" / "Scripts" / "python.exe"
         cmd = [
-            "manim",
-            "-pql",  # preview quality, last scene
+            str(python_path), "-m", "manim",
+            "-ql",  # low quality, no preview mode
             "--media_dir", str(media_dir),
             str(script_path),
             scene_name  # Explicitly specify the scene
@@ -71,17 +73,28 @@ def render_video(script_path: Path) -> tuple[Path | None, str | None]:
             return None, result.stderr
         
         # Debug: Check render directory contents
-        render_dir = videos_dir / scene_name
+        script_name = script_path.stem  # Use script filename for directory
+        render_dir = videos_dir / script_name
         logger.info(f"Checking for mp4 in: {render_dir}")
-        logger.info(f"Dir contents: {list(render_dir.rglob('*'))}")
+        if render_dir.exists():
+            logger.info(f"Dir contents: {list(render_dir.rglob('*'))}")
         
-        # Look for video in expected location first
-        expected_path = render_dir / "1080p60" / f"{scene_name}.mp4"
-        if expected_path.exists():
-            latest_video = expected_path
-            logger.info(f"Found video at expected path: {latest_video}")
-        else:
-            # Fall back to searching
+        # Look for video in expected locations (try different quality settings)
+        possible_paths = [
+            render_dir / "480p15" / f"{scene_name}.mp4",
+            render_dir / "1080p60" / f"{scene_name}.mp4", 
+            render_dir / "720p30" / f"{scene_name}.mp4"
+        ]
+        
+        latest_video = None
+        for path in possible_paths:
+            if path.exists():
+                latest_video = path
+                logger.info(f"Found video at: {latest_video}")
+                break
+        
+        if not latest_video:
+            # Fall back to searching for any mp4 files
             video_files = list(videos_dir.rglob("*.mp4"))
             if not video_files:
                 video_files = list(media_dir.rglob("*.mp4"))

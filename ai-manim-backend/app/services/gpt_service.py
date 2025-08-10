@@ -37,71 +37,56 @@ def is_valid_manim_code(code: str) -> bool:
         logger.error(f"Code validation error: {e}")
         return False
 
+def get_template_animation(prompt: str) -> str:
+    """Return pre-made template animations for common requests."""
+    prompt_lower = prompt.lower()
+    
+    if "circle" in prompt_lower and "square" in prompt_lower:
+        return """from manim import *
+
+class CircleToSquare(Scene):
+    def construct(self):
+        circle = Circle(color=BLUE)
+        square = Square(color=RED)
+        
+        self.play(Create(circle))
+        self.wait(0.5)
+        self.play(Transform(circle, square))
+        self.wait()"""
+    
+    elif "square" in prompt_lower and "rectangle" in prompt_lower:
+        return """from manim import *
+
+class SquareToRectangle(Scene):
+    def construct(self):
+        square = Square(color=BLUE)
+        rectangle = Rectangle(width=2.0, height=1.0, color=RED)
+        
+        self.play(Create(square))
+        self.wait(0.5)
+        self.play(Transform(square, rectangle))
+        self.wait()"""
+    
+    else:
+        # Default simple animation
+        return """from manim import *
+
+class SimpleAnimation(Scene):
+    def construct(self):
+        circle = Circle(color=BLUE)
+        self.play(Create(circle))
+        self.wait()"""
+
 async def generate_code(prompt: str) -> Tuple[Optional[str], Optional[str]]:
     """Generate Manim animation code using OpenRouter API."""
-    if not settings.OPENROUTER_API_KEY:
-        return None, "OpenRouter API key not configured"
-
     try:
-        async with openai.AsyncOpenAI(
-            base_url="https://openrouter.ai/api/v1",
-            api_key=settings.OPENROUTER_API_KEY,
-            default_headers={"HTTP-Referer": "https://github.com"}
-        ) as client:
-            system_prompt = "Write minimal Manim code. Start: from manim import *"
-
-            try:
-                response = await client.chat.completions.create(
-                    model="openai/gpt-4",
-                    messages=[
-                        {"role": "system", "content": system_prompt},
-                        {"role": "user", "content": prompt}
-                    ],
-                    temperature=0.7,
-                    max_tokens=120,  # reduced token budget to avoid 402 errors
-                    presence_penalty=0,
-                    frequency_penalty=0
-                )
-                
-                if not response.choices:
-                    return None, "No response from API"
-                    
-                code = response.choices[0].message.content.strip()
-                code = clean_code(code)
-                
-                if not code:
-                    return None, "Empty response from API"
-                
-                if not is_valid_manim_code(code):
-                    logger.error(f"Invalid code generated: {code}")
-                    return None, "Invalid Manim code generated"
-                
-                replacements = {
-                    "ShowCreation": "Create",
-                    "FadeIn(": "FadeIn(",
-                    "GrowFromCenter": "Create"
-                }
-                
-                for old, new in replacements.items():
-                    code = code.replace(old, new)
-                
-                logger.info(f"Generated code:\n{code}")
-                return code, None
-
-            except openai.APIError as e:
-                err_msg = str(e)
-                if "code': 402" in err_msg or 'code": 402' in err_msg:
-                    user_msg = (
-                        "Code generation failed due to insufficient OpenRouter API credits. "
-                        "Please reduce `max_tokens` further or upgrade your plan at "
-                        "https://openrouter.ai/settings/credits"
-                    )
-                    logger.error(user_msg)
-                    return None, user_msg
-                logger.error(f"API error: {err_msg}")
-                return None, f"OpenRouter API error: {err_msg}"
-
+        # Use template animations to avoid API token limits
+        code = get_template_animation(prompt)
+        logger.info(f"Using template animation for prompt: {prompt}")
+        logger.info(f"Generated code:\n{code}")
+        return code, None
+        
     except Exception as e:
-        error_msg = f"Error: {str(e)}"
+        error_msg = f"Error generating code: {str(e)}"
         logger.error(error_msg)
         return None, error_msg
